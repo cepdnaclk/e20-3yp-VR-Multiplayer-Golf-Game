@@ -26,5 +26,8 @@
       "path": "Samples~"
     }
   ],
-  "_fingerprint": "90d011a70418fd5b0f4b8e86df39444d2af228dd"
+  "_fingerprint": "90d011a70418fd5b0f4b8e86df39444d2af228dd",
+  "dependencies": {
+    "com.unity.searcher": "file:"
+  }
 }

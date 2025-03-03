@@ -4,11 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelector(".nav-links");
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      navbar.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
-    } else {
-      navbar.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-    }
+    navbar.style.backgroundColor = window.scrollY > 50 ? "rgba(0, 0, 0, 0.9)" : "rgba(0, 0, 0, 0.8)";
   });
 
   document.querySelectorAll(".nav-links a").forEach((anchor) => {
@@ -33,16 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let interval;
 
   function showImage(index) {
-    // Ensure index wraps around correctly
-    if (index >= carouselImages.length) {
-      currentIndex = 0;
-    } else if (index < 0) {
-      currentIndex = carouselImages.length - 1;
-    } else {
-      currentIndex = index;
-    }
-
-    // Remove active class from all images
+    currentIndex = (index + carouselImages.length) % carouselImages.length;
     carouselImages.forEach((img, i) => {
       img.classList.toggle("active", i === currentIndex);
       dots[i].classList.toggle("active", i === currentIndex);
@@ -57,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     showImage(currentIndex - 1);
   }
 
-  // Event Listeners for Navigation Buttons
   prevBtn.addEventListener("click", function () {
     prevImage();
     restartAutoSlide();
@@ -75,9 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Auto-slide function
   function startAutoSlide() {
-    interval = setInterval(nextImage, 5000); // Change every 5 seconds
+    interval = setInterval(nextImage, 5000);
   }
 
   function restartAutoSlide() {
@@ -85,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
     startAutoSlide();
   }
 
-  // Start the auto-slide when page loads
   startAutoSlide();
 
   // Slideshow Functionality for Data Flow Stack
@@ -97,29 +81,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
+    const slides = document.getElementsByClassName("mySlides");
+    slideIndex = (n + slides.length - 1) % slides.length + 1;
+    Array.from(slides).forEach((slide, i) => {
+      slide.style.display = i === slideIndex - 1 ? "block" : "none";
+    });
   }
 
-  document
-    .querySelector(".slideshow-container .prev")
-    .addEventListener("click", function () {
-      plusSlides(-1);
-    });
+  document.querySelector(".slideshow-container .prev").addEventListener("click", function () {
+    plusSlides(-1);
+  });
 
-  document
-    .querySelector(".slideshow-container .next")
-    .addEventListener("click", function () {
-      plusSlides(1);
-    });
+  document.querySelector(".slideshow-container .next").addEventListener("click", function () {
+    plusSlides(1);
+  });
 });

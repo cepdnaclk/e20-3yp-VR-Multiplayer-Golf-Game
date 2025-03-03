@@ -8,8 +8,11 @@
     "changelogUrl": "https://github.com/StinkySteak/com.stinkysteak.simulationtimer/blob/main/CHANGELOG.md",
     "licensesUrl": "https://github.com/StinkySteak/com.stinkysteak.simulationtimer/blob/main/LICENSE.md",
     "author": {
-      "name": "Stinkysteak",
-      "email": "stinkysteak@steaksoft.com",
-      "url": "https://steaksoft.net"
+        "name": "Stinkysteak",
+        "email": "stinkysteak@steaksoft.com",
+        "url": "https://steaksoft.net"
+    },
+    "dependencies": {
+        "com.stinkysteak.simulationtimer": "file:"
     }
-  }
+}

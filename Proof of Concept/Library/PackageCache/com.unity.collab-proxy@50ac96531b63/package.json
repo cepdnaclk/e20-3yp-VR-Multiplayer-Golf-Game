@@ -5,7 +5,9 @@
   "unity": "2021.3",
   "unityRelease": "0f1",
   "description": "The package gives you the ability to use Unity Version Control in the Unity editor. To use Unity Version Control, a subscription is required. Learn more about how you can get started for free by visiting https://unity.com/solutions/version-control",
-  "dependencies": {},
+  "dependencies": {
+    "com.unity.collab-proxy": "file:"
+  },
   "keywords": [
     "backup",
     "cloud",

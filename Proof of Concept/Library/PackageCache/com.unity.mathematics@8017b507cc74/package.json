@@ -7,7 +7,9 @@
   "keywords": [
     "unity"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "com.unity.mathematics": "file:"
+  },
   "_upm": {
     "changelog": "### Fixed\n* Fixed `math.hash` crash when using IL2CPP builds on Arm 32 bit devices.\n* Fixed obsolete method usage warnings for `MatrixDrawer.CanCacheInspectorGUI` and `PrimitiveVectorDrawer.CanCacheInspectorGUI` in UNITY_2023_2_OR_NEWER.\n* Updated minimum editor version to 2021.3"
   },

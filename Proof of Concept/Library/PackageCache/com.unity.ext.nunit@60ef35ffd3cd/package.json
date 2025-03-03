@@ -10,7 +10,9 @@
     "test"
   ],
   "category": "Libraries",
-  "dependencies": {},
+  "dependencies": {
+    "com.unity.ext.nunit": "file:"
+  },
   "relatedPackages": {
     "com.unity.ext.nunit.tests": "2.0.5"
   },

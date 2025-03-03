@@ -1,151 +1,282 @@
-
 <!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Projects | Department of Computer Engineering, University of Peradeniya">
-    <meta name="author" content="Department of Computer Engineering">
-    <link rel="icon" href="/e20-3yp-VR-Multiplayer-Golf-Game/assets/images/favicon.ico">
+<html lang="en">
 
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VR Multiplayer Golf Game</title>
-    
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="/e20-3yp-SafePlus/assets/css/index.css" rel="stylesheet">
-
-    <!-- seo title=false -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-10YPVZG432"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-10YPVZG432');
-    </script>
-
-
+    <link rel="icon" href="Assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <header class="blog-header pt-3 pb-2 mb-0">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="d-none d-sm-block col-md-2 col-sm-3 pt-1">
-                    <img class=" mx-auto d-block img-fluid img-logo" src="/e20-3yp-SafePlus/assets/images/crest.png" alt="Logo">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="Assets/img/logo.jpg" alt="Logo" class="logo-img">
+            </a>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#implementation">Implementation</a></li>
+                <li><a href="#budget">Budget</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Sections -->
+        <section id="home" class="full-screen home">
+            <div class="content">
+                <img src="Assets/img/logo.jpg" alt="VR Golf Logo" class="animated-logo">
+                <h1>VR Multiplayer Golf Game</h1>
+                <p>Compete, socialize, and perfect your swing in an immersive virtual world!</p>
+            </div>
+        </section>
+
+        <section id="about" class="full-screen about">
+            <div class="content">
+                <h2>About</h2>
+                <p>Enjoy an immersive golf experience from the comfort of your home.</p>
+
+                <div class="about-container">
+                    <div class="about-column">
+                        <h3>Real World Problem</h3>
+                        <ul>
+                            <li><strong>Lack of Shared Activities:</strong> Reduced opportunities for fun and
+                                interactive
+                                experiences.</li>
+                            <li><strong>Emotional Disconnect:</strong> Weaker relationships and feelings of loneliness.
+                            </li>
+                            <li><strong>Missed Memories:</strong> Missing out on special moments and bonding
+                                opportunities.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="about-column">
+                        <h3>Proposed Solution</h3>
+                        <p>Creating a VR multiplayer golf game that brings families and friends closer.</p>
+                    </div>
+
+                    <div class="about-column">
+                        <h3>How it Works</h3>
+                        <ul>
+                            <li>Players use VR headsets and motion sensors on their hands and golf sticks to play a
+                                realistic game of golf.</li>
+                            <li>A multiplayer mode allows users to join virtual game rooms, interact via voice chat, and
+                                enjoy the game together.</li>
+                            <li>The game includes different difficulty levels, making it suitable for beginners and
+                                experienced players alike.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-10 col-sm-9">
-                    <a class="blog-header-logo text-dark" href="#">
-                        Projects - Department of Computer Engineering <br>
-                        <small class="small">University of Peradeniya, Sri Lanka</small>
-                    </a>
+
+                <h3>Potential Impact</h3>
+                <p class="see-more-text">This project aims to bridge long-distance relationships, promote physical and
+                    mental well-being, and make golf more accessible. It fosters social inclusion, tackles sedentary
+                    lifestyles, and contributes to the VR and e-sports industries.</p>
+            </div>
+        </section>
+
+
+
+        <!-- chnage this section only -->
+        <section id="implementation" class="full-screen implementation">
+            <div class="content">
+                <h2>Implementation</h2>
+                <p>Details about how our VR golf game is developed.</p>
+        
+                <div class="implementation-grid">
+                    <!-- Hardware Stack -->
+                    <div class="implementation-column">
+                        <h3>Hardware Stack</h3>
+                        <img src="Assets/img/hardware.png" alt="Hardware Stack">
+                        <p>We use VR headsets, motion sensors, and haptic feedback devices to simulate a realistic golf experience.</p>
+                    </div>
+        
+                    <!-- Data Flow Stack -->
+                    <div class="implementation-column">
+                        <h3>Data Flow Stack</h3>
+                        <img src="Assets/img/implementation/dataflow.jpg" alt="Data Flow Stack">
+                        <p>Real-time data synchronization between players ensures smooth multiplayer interactions.</p>
+                    </div>
+        
+                    <!-- Tech Stack -->
+                    <div class="implementation-column">
+                        <h3>Tech Stack</h3>
+                        <img src="Assets/img/implementation/techstack.jpg" alt="Tech Stack">
+                        <p>Our game is built using Unity 3D, C#, and optimized physics engines to enhance gameplay realism.</p>
+                    </div>
+        
+                    <!-- AWS -->
+                    <div class="implementation-column">
+                        <h3>AWS</h3>
+                        <img src="Assets/img/implementation/aws.jpg" alt="AWS">
+                        <p>We leverage AWS for scalable cloud storage, multiplayer matchmaking, and real-time game hosting.</p>
+                    </div>
                 </div>
             </div>
-        </header>
-    </div>
-
-    <main role="main" class="container pt-3" style="min-height: 90vh">
-        <div class="container px-5">
-            
-<h1 id="project-title"></h1>
-
-<hr />
-
-<h2 id="team">Team</h2>
-<ul>
-  <li>E/20/254 <a href="e20254@eng.pdn.ac.lk">e20254@eng.pdn.ac.lk</a></li>
-  <li>E/20/367 <a href="e20367@eng.pdn.ac.lk">e20367@eng.pdn.ac.lk</a></li>
-  <li>E/20/370 <a href="e20370@eng.pdn.ac.lk">e20370@eng.pdn.ac.lk</a></li>
-  <li>E/20/420 <a href="e20420@eng.pdn.ac.lk">e20420@eng.pdn.ac.lk</a></li>
-</ul>
-
-<!-- Image (photo/drawing of the final hardware) should be here -->
-
-<!-- This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/) -->
-
-<!-- ![Sample Image](/e20-3yp-SafePlus/images/sample.png) -->
-
-<h4 id="table-of-contents">Table of Contents</h4>
-<ol>
-  <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#solution-architecture">Solution Architecture</a></li>
-  <li><a href="#hardware-and-software-designs">Hardware &amp; Software Designs</a></li>
-  <li><a href="#testing">Testing</a></li>
-  <li><a href="#detailed-budget">Detailed budget</a></li>
-  <li><a href="#conclusion">Conclusion</a></li>
-  <li><a href="#links">Links</a></li>
-</ol>
-
-<h2 id="introduction">Introduction</h2>
-
-<p>The VR gaming industry is growing rapidly, but the VR golf segment faces challenges:</p>
-          <ul>
-            <li>Social Isolation: Lack of multiplayer features and real-time interaction.</li>
-            <li>High Costs: Premium VR games are expensive and inaccessible in regions like Sri Lanka.</li>
-            <li>Limited Accessibility: Busy lifestyles prevent casual gamers from experiencing golf.</li>
-          </ul>
-
-<h2 id="solution-architecture">Solution Architecture</h2>
-
-<p>High level diagram + description</p>
-
-<h2 id="hardware-and-software-designs">Hardware and Software Designs</h2>
-
-<p>Detailed designs with many sub-sections</p>
-
-<h2 id="testing">Testing</h2>
-
-<p>Testing done on hardware and software, detailed + summarized results</p>
-
-<h2 id="detailed-budget">Detailed budget</h2>
-
-<p>All items and costs</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Item</th>
-      <th style="text-align: center">Quantity</th>
-      <th style="text-align: center">Unit Cost</th>
-      <th style="text-align: right">Total</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sample item</td>
-      <td style="text-align: center">5</td>
-      <td style="text-align: center">10 LKR</td>
-      <td style="text-align: right">50 LKR</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>What was achieved, future developments, commercialization plans</p>
-
-<h2 id="links">Links</h2>
-
-<ul>
-  <li><a href="https://github.com/cepdnaclk/eYY-3yp-project-template" target="_blank">Project Repository</a></li>
-  <li><a href="https://cepdnaclk.github.io/eYY-3yp-project-template" target="_blank">Project Page</a></li>
-  <li><a href="http://www.ce.pdn.ac.lk/">Department of Computer Engineering</a></li>
-  <li><a href="https://eng.pdn.ac.lk/">University of Peradeniya</a></li>
-</ul>
+        </section>
+        
+        <!-- dont chnage below ones -->
 
 
+
+        <section id="budget" class="full-screen budget">
+            <div class="budget-container">
+                <h2>Budget</h2>
+                <div class="table-wrapper">
+                    <table class="budget-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Component</th>
+                                <th>Quantity</th>
+                                <th>Price per item (LKR)</th>
+                                <th>Total Price (LKR)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>01</th>
+                                <td>MPU-6050</td>
+                                <td>3x2</td>
+                                <td>540.00</td>
+                                <td>3240.00</td>
+                            </tr>
+                            <tr>
+                                <th>02</th>
+                                <td>HC-05 Bluetooth RF Transceiver</td>
+                                <td>3x2</td>
+                                <td>990.00</td>
+                                <td>10140.00</td>
+                            </tr>
+                            <tr>
+                                <th>03</th>
+                                <td>Vibrator</td>
+                                <td>1x2</td>
+                                <td>120.00</td>
+                                <td>240.00</td>
+                            </tr>
+                            <tr>
+                                <th>04</th>
+                                <td>VR Box with headset & mic</td>
+                                <td>1x2</td>
+                                <td>7000.00</td>
+                                <td>14000.00</td>
+                            </tr>
+                            <tr>
+                                <th>05</th>
+                                <td>AWS</td>
+                                <td>1</td>
+                                <td>30.00 per hour</td>
+                                <td>21600.00 per month</td>
+                            </tr>
+                            <tr>
+                                <th>06</th>
+                                <td>Rechargeable battery</td>
+                                <td>9x2</td>
+                                <td>420.00</td>
+                                <td>7560.00</td>
+                            </tr>
+                            <tr>
+                                <th>07</th>
+                                <td>Button</td>
+                                <td>6x2</td>
+                                <td>50.00</td>
+                                <td>600.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="4">Total</th>
+                                <th>57380.00</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="full-screen team">
+            <div class="content">
+                <h2>Meet the Team</h2>
+                <div class="team-container">
+                    <div class="team-member">
+                        <img src="Assets/img/team/e20254.jpg" alt="E/20/254">
+                        <p>Methpura<br> <a href="mailto:e20254@eng.pdn.ac.lk">Email</a></p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Assets/img/team/e20367.jpg" alt="E/20/367">
+                        <p>Binuri <br> <a href="mailto:e20367@eng.pdn.ac.lk">Email</a></p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Assets/img/team/e20370.jpg" alt="E/20/370">
+                        <p>Rashmika<br> <a href="mailto:e20370@eng.pdn.ac.lk">Email</a></p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Assets/img/team/e20420.jpg" alt="E/20/420">
+                        <p>Janith<br> <a href="mailto:e20420@eng.pdn.ac.lk">Email</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="full-screen gallery">
+            <div class="content">
+                <h2>Gallery</h2>
+                <div class="carousel">
+                    <img src="Assets/img/gallery/image1.jpg" alt="Gallery Image 1" class="active">
+                    <img src="Assets/img/gallery/image2.jpg" alt="Gallery Image 2">
+                    <img src="Assets/img/gallery/image3.jpg" alt="Gallery Image 3">
+                    <img src="Assets/img/gallery/image4.jpg" alt="Gallery Image 4">
+                    <img src="Assets/img/gallery/image5.jpg" alt="Gallery Image 5">
+                    <img src="Assets/img/gallery/image6.jpg" alt="Gallery Image 6">
+                    <img src="Assets/img/gallery/image7.jpg" alt="Gallery Image 7">
+                    <img src="Assets/img/gallery/image8.jpg" alt="Gallery Image 8">
+                    <div class="nav">
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                    </div>
+                    <div class="dots">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
         </div>
+        </div>
+        </section>
     </main>
-<footer class="blog-footer">
-    <p>
-        <a href="#">Back to top</a>
-    </p>
-</footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content">
+            <p>&copy; 2023 VR Multiplayer Golf Game. All rights reserved.</p>
+        </div>
+    </footer>
 
-
+    <!-- Scripts -->
+    <script src="scripts/index.js"></script>
 </body>
+
+</html>

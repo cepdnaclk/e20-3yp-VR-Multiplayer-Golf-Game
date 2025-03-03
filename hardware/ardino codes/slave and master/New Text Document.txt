@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=qq43sCuDnnE&t=396s
+
+ds and dm
+
++ADDR:0022:03:018C0E
+
+
+ms and mm
+
++ADDR:0022:09:011A0E
+

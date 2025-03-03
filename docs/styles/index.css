@@ -30,10 +30,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Allowing section to expand if content overflows */
+    min-height: 100vh;
+    /* Allowing section to expand if content overflows */
     width: 100vw;
     padding: 20px;
-    overflow: auto; /* Prevents content from spilling over to other sections */
+    overflow: auto;
+    /* Prevents content from spilling over to other sections */
 }
 
 
@@ -138,7 +140,8 @@ p {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    flex-wrap: wrap;
+    /* Ensures wrapping on smaller screens */
     align-items: center;
     max-width: 100%;
     padding: 20px;
@@ -146,14 +149,19 @@ p {
 
 .team-member {
     text-align: center;
-    flex: 1 1 220px; /* Ensures consistent sizing */
-    max-width: 220px; /* Prevents images from becoming too large */
+    flex: 1 1 220px;
+    /* Ensures consistent sizing */
+    max-width: 220px;
+    /* Prevents images from becoming too large */
 }
 
 .team-member img {
-    width: 220px; /* Fixed width for uniform size */
-    height: 280px; /* Fixed height for consistent aspect ratio */
-    object-fit: cover; /* Ensures images maintain proportions */
+    width: 220px;
+    /* Fixed width for uniform size */
+    height: 280px;
+    /* Fixed height for consistent aspect ratio */
+    object-fit: cover;
+    /* Ensures images maintain proportions */
     border-radius: 10px;
     transition: transform 0.3s;
 }
@@ -499,7 +507,8 @@ h2 {
     text-align: left;
 }
 
-.budget-table th, .budget-table td {
+.budget-table th,
+.budget-table td {
     padding: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     font-size: 1.2rem;
@@ -533,7 +542,9 @@ tfoot th {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-    .budget-table th, .budget-table td {
+
+    .budget-table th,
+    .budget-table td {
         font-size: 1rem;
         padding: 10px;
     }
@@ -543,6 +554,7 @@ tfoot th {
     .budget-table {
         font-size: 0.9rem;
     }
+
     h2 {
         font-size: 2.5rem;
     }
@@ -552,7 +564,8 @@ tfoot th {
 
 .implementation-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
     gap: 30px;
     width: 100%;
     max-width: 900px;
@@ -579,9 +592,11 @@ tfoot th {
 
 .implementation-column img {
     width: 100%;
-    max-width: 300px; /* Ensures images are not too large */
+    max-width: 300px;
+    /* Ensures images are not too large */
     height: 180px;
-    object-fit: cover; /* Ensures images keep aspect ratio */
+    object-fit: cover;
+    /* Ensures images keep aspect ratio */
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -594,13 +609,16 @@ tfoot th {
 /* Responsive */
 @media (max-width: 768px) {
     .implementation-grid {
-        grid-template-columns: 1fr; /* Stacks into a single column */
+        grid-template-columns: 1fr;
+        /* Stacks into a single column */
     }
 
     .implementation-column img {
-        max-width: 250px; /* Adjusts image size for smaller screens */
+        max-width: 250px;
+        /* Adjusts image size for smaller screens */
     }
 }
+
 .carousel-container {
     position: relative;
     width: 100%;
@@ -643,7 +661,8 @@ tfoot th {
 }
 
 /* Navigation Buttons */
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -656,10 +675,16 @@ tfoot th {
     border-radius: 5px;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev {
+    left: 10px;
+}
 
-.prev:hover, .next:hover {
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -670,11 +695,13 @@ tfoot th {
         height: 200px;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         font-size: 18px;
         padding: 8px 12px;
     }
 }
+
 .intro-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -700,6 +727,7 @@ tfoot th {
     background: #0099aa;
     transform: scale(1.05);
 }
+
 .slideshow-container {
     position: relative;
     max-width: 100%;
@@ -715,7 +743,8 @@ img {
     width: 100%;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -735,7 +764,7 @@ img {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
-

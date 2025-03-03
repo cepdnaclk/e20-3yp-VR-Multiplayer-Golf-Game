@@ -1,124 +1,106 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart'; // Ensure this import is correct
 
-class DeviceConnectionPage extends StatelessWidget {
+class DeviceConnectionPage extends StatefulWidget {
   const DeviceConnectionPage({super.key});
+
+  @override
+  _DeviceConnectionPageState createState() => _DeviceConnectionPageState();
+}
+
+class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
+  bool handBandConnected = false;
+  bool golfStickConnected = false;
+  bool headsetConnected = false;
+  bool allConnected = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _simulateConnection();
+  }
+
+  void _simulateConnection() async {
+    // Simulating Bluetooth device connections with delays
+    await Future.delayed(const Duration(seconds: 2));
+    setState(() => handBandConnected = true);
+
+    await Future.delayed(const Duration(seconds: 2));
+    setState(() => golfStickConnected = true);
+
+    await Future.delayed(const Duration(seconds: 2));
+    setState(() {
+      headsetConnected = true;
+      allConnected = true; // All devices connected
+    });
+
+    // Navigate to HomePage after a short delay
+    await Future.delayed(const Duration(seconds: 1));
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[850], // Dark grey background
+      backgroundColor: const Color(0xFF2A6F6F), // Matching Splash Screen BG
       body: Center(
-        child: Container(
-          width: MediaQuery.of(context).size.width * 0.8, // Adjust width as needed
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            color: Colors.teal[800], // Dark teal background
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              Align(
-                alignment: Alignment.topLeft,
-                child: IconButton(
-                  icon: const Icon(Icons.arrow_back, color: Colors.white),
-                  onPressed: () {
-                    Navigator.pop(context); // Navigate back
-                  },
-                ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min, // Centers content
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/vr_golf_logo.png', // Make sure the asset path is correct
+              width: 200,
+            ),
+            const SizedBox(height: 20),
+            const Text(
+              "VR GOLF\nMULTIPLAYER",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 32,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
               ),
-              const SizedBox(height: 10),
-              const Text(
-                'Device Connection',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(height: 30),
-              const Text(
-                'Connecting bluetooth devices ......',
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(height: 30),
-              _buildConnectionItem(
-                label: 'Hand band contacting.',
-                connected: false, // Replace with actual connection status
-              ),
-              const SizedBox(height: 10),
-              _buildConnectionItem(
-                label: 'Golf stick connecting.',
-                connected: false, // Replace with actual connection status
-              ),
-              const SizedBox(height: 10),
-              _buildConnectionItem(
-                label: 'Headset connecting.',
-                connected: false, // Replace with actual connection status
-              ),
-              const SizedBox(height: 30),
-              Expanded(
-                child: Center(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Image.asset(
-                        'assets/vr_golf_logo.png', // Replace with your logo asset path
-                        width: 150,
-                      ),
-                      const SizedBox(height: 10),
-                      const Text(
-                        'VR GOLF\nMULTIPLAYER',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
+            ),
+            const SizedBox(height: 30),
+            _buildConnectionItem("Hand band connecting..", handBandConnected),
+            const SizedBox(height: 15),
+            _buildConnectionItem("Golf stick connecting..", golfStickConnected),
+            const SizedBox(height: 15),
+            _buildConnectionItem("Headset connecting..", headsetConnected),
+            const SizedBox(height: 30),
+            allConnected
+                ? const Icon(Icons.check_circle, size: 50, color: Colors.green)
+                : const CircularProgressIndicator(color: Colors.white),
+            const SizedBox(height: 10),
+            Text(
+              allConnected ? "ALL DEVICES CONNECTED" : "CONNECTING...",
+              style: const TextStyle(color: Colors.white, fontSize: 16),
+            ),
+          ],
         ),
       ),
     );
   }
 
-  Widget _buildConnectionItem({
-    required String label,
-    required bool connected,
-  }) {
+  Widget _buildConnectionItem(String label, bool connected) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Expanded(
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
-            decoration: BoxDecoration(
-              color: Colors.teal[600], // Lighter teal for item background
-              borderRadius: BorderRadius.circular(5),
-            ),
-            child: Text(
-              label,
-              style: const TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-              ),
-            ),
-          ),
+        Text(
+          label,
+          style: const TextStyle(fontSize: 18, color: Colors.white),
         ),
         const SizedBox(width: 10),
-        Container(
-          width: 25,
-          height: 25,
-          decoration: BoxDecoration(
-            color: connected ? Colors.green : Colors.grey, // Green if connected, grey otherwise
-            borderRadius: BorderRadius.circular(5),
-          ),
+        Icon(
+          connected ? Icons.check_circle : Icons.sync,
+          color: connected ? Colors.green : Colors.white,
         ),
       ],
     );

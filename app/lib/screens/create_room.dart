@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'code_create_page.dart'; // Import the next page
+import 'code_create_page.dart';
 
 class CreateRoomPage extends StatefulWidget {
   const CreateRoomPage({super.key});

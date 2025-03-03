@@ -21,34 +21,38 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF2A6F6F), // Background color from the wireframe
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            'assets/images/vr_golf_logo.png',
-            width: 200,
-          ),
-          SizedBox(height: 20),
-          Text(
-            "VR GOLF\nMULTIPLAYER",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 32,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
+      backgroundColor: Color(0xFF2A6F6F), // Background color from wireframe
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min, // Centers in the middle of the screen
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/vr_golf_logo.png',
+              width: 200,
             ),
-          ),
-          SizedBox(height: 20),
-          CircularProgressIndicator(
-            color: Colors.white,
-          ),
-          SizedBox(height: 10),
-          Text(
-            "LOADING...",
-            style: TextStyle(color: Colors.white),
-          ),
-        ],
+            SizedBox(height: 20),
+            Text(
+              "VR GOLF\nMULTIPLAYER",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 32,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 20),
+            CircularProgressIndicator(
+              color: Colors.white,
+            ),
+            SizedBox(height: 10),
+            Text(
+              "LOADING...",
+              style: TextStyle(color: Colors.white),
+            ),
+          ],
+        ),
       ),
     );
   }

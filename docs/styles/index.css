@@ -675,3 +675,29 @@ tfoot th {
         padding: 8px 12px;
     }
 }
+.intro-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.watch-button {
+    background: #00ffcc;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.watch-button:hover {
+    background: #0099aa;
+    transform: scale(1.05);
+}
+

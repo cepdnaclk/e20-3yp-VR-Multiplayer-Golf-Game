@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart'; // Ensure this import is correct
 
 class DeviceConnectionPage extends StatefulWidget {
   const DeviceConnectionPage({super.key});
@@ -32,6 +33,15 @@ class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
       headsetConnected = true;
       allConnected = true; // All devices connected
     });
+
+    // Navigate to HomePage after a short delay
+    await Future.delayed(const Duration(seconds: 1));
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+      );
+    }
   }
 
   @override

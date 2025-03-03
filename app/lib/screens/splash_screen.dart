@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -10,18 +11,15 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => LoginScreen()),
-      );
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.pushReplacementNamed(context, '/login');
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF2A6F6F), // Background color from wireframe
+      backgroundColor: const Color(0xFF2A6F6F), // Background color from wireframe
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min, // Centers in the middle of the screen
@@ -32,8 +30,8 @@ class _SplashScreenState extends State<SplashScreen> {
               'assets/images/vr_golf_logo.png',
               width: 200,
             ),
-            SizedBox(height: 20),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               "VR GOLF\nMULTIPLAYER",
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -42,12 +40,12 @@ class _SplashScreenState extends State<SplashScreen> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 20),
-            CircularProgressIndicator(
+            const SizedBox(height: 20),
+            const CircularProgressIndicator(
               color: Colors.white,
             ),
-            SizedBox(height: 10),
-            Text(
+            const SizedBox(height: 10),
+            const Text(
               "LOADING...",
               style: TextStyle(color: Colors.white),
             ),

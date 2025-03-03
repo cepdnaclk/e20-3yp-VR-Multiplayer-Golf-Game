@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  final String username;
+
+  const HomePage({super.key, this.username = "User"});
 
   @override
   Widget build(BuildContext context) {
@@ -25,20 +27,22 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text(
-                        "Welcome  ...User1...",
-                        style: TextStyle(
+                      Text(
+                        "Welcome, $username!",
+                        style: const TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
                       ),
                       const SizedBox(height: 30),
-                      _buildMenuButton('assets/images/create_room.png', "Create Room"),
-                      _buildMenuButton('assets/images/join_room.png', "Join Room"),
-                      _buildMenuButton('assets/images/avatar_setting.png', "Avatar Setting"),
-                      _buildMenuButton('assets/images/game_setting.png', "Game Setting"),
-                      _buildMenuButton('assets/images/help.png', "Help"),
+                      _buildMenuButton(context, 'assets/images/create_room.png', "Create Room", '/createRoom'),
+                      _buildMenuButton(context, 'assets/images/join_room.png', "Join Room", '/joinRoom'),
+                      _buildMenuButton(context, 'assets/images/avatar_setting.png', "Avatar Setting", '/avatarSettings'),
+                      _buildMenuButton(context, 'assets/images/game_setting.png', "Game Setting", '/gameSettings'),
+                      _buildMenuButton(context, 'assets/images/help.png', "Help", '/help'),
+                      const SizedBox(height: 20),
+                      _buildBackButton(context),
                     ],
                   ),
                 ),
@@ -75,8 +79,8 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // Helper Widget for Buttons
-  Widget _buildMenuButton(String imagePath, String text) {
+  // Helper Widget for Menu Buttons
+  Widget _buildMenuButton(BuildContext context, String imagePath, String text, String route) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: ElevatedButton.icon(
@@ -87,12 +91,35 @@ class HomePage extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
         ),
-        onPressed: () {}, // TODO: Add navigation
+        onPressed: () {
+          Navigator.pushNamed(context, route);
+        },
         icon: Image.asset(imagePath, width: 24, height: 24),
         label: Text(
           text,
           style: const TextStyle(color: Colors.white, fontSize: 16),
         ),
+      ),
+    );
+  }
+
+  // Back Button
+  Widget _buildBackButton(BuildContext context) {
+    return ElevatedButton.icon(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.red.shade700,
+        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
+        ),
+      ),
+      onPressed: () {
+        Navigator.pop(context); // Goes back to the previous screen
+      },
+      icon: const Icon(Icons.arrow_back, color: Colors.white),
+      label: const Text(
+        "Back",
+        style: TextStyle(color: Colors.white, fontSize: 16),
       ),
     );
   }

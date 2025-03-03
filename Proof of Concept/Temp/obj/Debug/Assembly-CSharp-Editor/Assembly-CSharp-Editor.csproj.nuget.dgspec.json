@@ -1,0 +1,952 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Assembly-CSharp-Editor.csproj": {}
+  },
+  "projects": {
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Assembly-CSharp-Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Assembly-CSharp-Editor.csproj",
+        "projectName": "Assembly-CSharp-Editor",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Assembly-CSharp-Editor.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Assembly-CSharp-Editor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Assembly-CSharp.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Assembly-CSharp.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Edgegap.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Edgegap.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\EncryptionTransportEditor.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\EncryptionTransportEditor.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\kcp2k.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\kcp2k.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Authenticators.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Authenticators.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.CompilerSymbols.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.CompilerSymbols.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Editor.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Editor.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Examples.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Examples.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\SimpleWebTransport.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\SimpleWebTransport.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Telepathy.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Telepathy.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Assembly-CSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Assembly-CSharp.csproj",
+        "projectName": "Assembly-CSharp",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Assembly-CSharp.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Assembly-CSharp\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Edgegap.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Edgegap.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\EncryptionTransportEditor.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\EncryptionTransportEditor.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\kcp2k.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\kcp2k.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Authenticators.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Authenticators.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.CompilerSymbols.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.CompilerSymbols.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Editor.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Editor.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Examples.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Examples.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\SimpleWebTransport.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\SimpleWebTransport.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Telepathy.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Telepathy.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Edgegap.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Edgegap.csproj",
+        "projectName": "Edgegap",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Edgegap.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Edgegap\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\EncryptionTransportEditor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\EncryptionTransportEditor.csproj",
+        "projectName": "EncryptionTransportEditor",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\EncryptionTransportEditor.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\EncryptionTransportEditor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\kcp2k.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\kcp2k.csproj",
+        "projectName": "kcp2k",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\kcp2k.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\kcp2k\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Authenticators.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Authenticators.csproj",
+        "projectName": "Mirror.Authenticators",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Authenticators.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Mirror.Authenticators\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.CompilerSymbols.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.CompilerSymbols.csproj",
+        "projectName": "Mirror.CompilerSymbols",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.CompilerSymbols.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Mirror.CompilerSymbols\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj",
+        "projectName": "Mirror.Components",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Mirror.Components\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj",
+        "projectName": "Mirror",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Mirror\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.CompilerSymbols.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.CompilerSymbols.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Editor.csproj",
+        "projectName": "Mirror.Editor",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Editor.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Mirror.Editor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Unity.Mirror.CodeGen.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Unity.Mirror.CodeGen.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Examples.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Examples.csproj",
+        "projectName": "Mirror.Examples",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Examples.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Mirror.Examples\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj",
+        "projectName": "Mirror.Transports",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Transports.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Mirror.Transports\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\kcp2k.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\kcp2k.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\SimpleWebTransport.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\SimpleWebTransport.csproj"
+              },
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Telepathy.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Telepathy.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\SimpleWebTransport.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\SimpleWebTransport.csproj",
+        "projectName": "SimpleWebTransport",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\SimpleWebTransport.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\SimpleWebTransport\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Telepathy.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Telepathy.csproj",
+        "projectName": "Telepathy",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Telepathy.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Telepathy\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Unity.Mirror.CodeGen.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Unity.Mirror.CodeGen.csproj",
+        "projectName": "Unity.Mirror.CodeGen",
+        "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Unity.Mirror.CodeGen.csproj",
+        "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+        "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Unity.Mirror.CodeGen\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+                "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

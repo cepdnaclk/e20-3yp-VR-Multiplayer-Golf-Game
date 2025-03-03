@@ -1,0 +1,152 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Mirror/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Mirror.CompilerSymbols": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Mirror.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mirror.dll": {}
+        }
+      },
+      "Mirror.CompilerSymbols/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Mirror.CompilerSymbols.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mirror.CompilerSymbols.dll": {}
+        }
+      },
+      "Mirror.Components/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Mirror": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Mirror.Components.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mirror.Components.dll": {}
+        }
+      },
+      "Unity.Mirror.CodeGen/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Mirror": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Mirror.CodeGen.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Mirror.CodeGen.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mirror/1.0.0": {
+      "type": "project",
+      "path": "Mirror.csproj",
+      "msbuildProject": "Mirror.csproj"
+    },
+    "Mirror.CompilerSymbols/1.0.0": {
+      "type": "project",
+      "path": "Mirror.CompilerSymbols.csproj",
+      "msbuildProject": "Mirror.CompilerSymbols.csproj"
+    },
+    "Mirror.Components/1.0.0": {
+      "type": "project",
+      "path": "Mirror.Components.csproj",
+      "msbuildProject": "Mirror.Components.csproj"
+    },
+    "Unity.Mirror.CodeGen/1.0.0": {
+      "type": "project",
+      "path": "Unity.Mirror.CodeGen.csproj",
+      "msbuildProject": "Unity.Mirror.CodeGen.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Mirror >= 1.0.0",
+      "Mirror.Components >= 1.0.0",
+      "Unity.Mirror.CodeGen >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Janith\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Editor.csproj",
+      "projectName": "Mirror.Editor",
+      "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Editor.csproj",
+      "packagesPath": "C:\\Users\\Janith\\.nuget\\packages\\",
+      "outputPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Temp\\obj\\Debug\\Mirror.Editor\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Janith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj": {
+              "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.Components.csproj"
+            },
+            "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj": {
+              "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Mirror.csproj"
+            },
+            "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Unity.Mirror.CodeGen.csproj": {
+              "projectPath": "D:\\University Modules\\Semester 5\\3YP\\3YP\\e20-3yp-VR-Multiplayer-Golf-Game\\Proof of Concept\\Unity.Mirror.CodeGen.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

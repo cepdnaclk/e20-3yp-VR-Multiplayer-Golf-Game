@@ -38,7 +38,6 @@ main {
     /* Prevents content from spilling over to other sections */
 }
 
-
 .content {
     max-width: 100%;
     padding: 20px;
@@ -169,7 +168,6 @@ p {
 .team-member img:hover {
     transform: scale(1.1);
 }
-
 
 /* Sections (excluding Home) */
 .about,
@@ -390,7 +388,6 @@ p {
     background-color: #717171;
 }
 
-
 .tagline {
     font-family: 'Lobster', cursive;
 }
@@ -463,7 +460,6 @@ p {
     position: relative;
     bottom: 0;
 }
-
 
 .budget {
     display: flex;
@@ -559,8 +555,6 @@ tfoot th {
         font-size: 2.5rem;
     }
 }
-
-
 
 .implementation-grid {
     display: grid;
@@ -726,45 +720,4 @@ tfoot th {
 .watch-button:hover {
     background: #0099aa;
     transform: scale(1.05);
-}
-
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-img {
-    vertical-align: middle;
-    width: 100%;
-}
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }

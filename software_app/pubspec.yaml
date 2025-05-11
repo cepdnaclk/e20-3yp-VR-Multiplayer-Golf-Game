@@ -15,8 +15,10 @@ dependencies:
   flutter_bluetooth_serial: ^0.4.0
   sensors_plus: ^3.0.3
   cupertino_icons: ^1.0.8
-  google_sign_in: ^5.4.2
-  firebase_auth: ^4.6.0
+  google_sign_in: ^6.3.0
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.3
+  cloud_firestore: ^5.4.2
 
 dev_dependencies:
   flutter_test:

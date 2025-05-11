@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart'; // Ensure this import is correct
+import 'home_page.dart';
 
 class DeviceConnectionPage extends StatefulWidget {
   const DeviceConnectionPage({super.key});
@@ -14,14 +14,23 @@ class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
   bool headsetConnected = false;
   bool allConnected = false;
 
+  String userName = 'Player'; // Default name
+
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final args = ModalRoute.of(context)?.settings.arguments as Map?;
+      if (args != null && args.containsKey('name')) {
+        setState(() {
+          userName = args['name'];
+        });
+      }
+    });
     _simulateConnection();
   }
 
   void _simulateConnection() async {
-    // Simulating Bluetooth device connections with delays
     await Future.delayed(const Duration(seconds: 2));
     setState(() => handBandConnected = true);
 
@@ -31,10 +40,9 @@ class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
     await Future.delayed(const Duration(seconds: 2));
     setState(() {
       headsetConnected = true;
-      allConnected = true; // All devices connected
+      allConnected = true;
     });
 
-    // Navigate to HomePage after a short delay
     await Future.delayed(const Duration(seconds: 1));
     if (mounted) {
       Navigator.pushReplacement(
@@ -47,15 +55,13 @@ class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF2A6F6F), // Matching Splash Screen BG
+      backgroundColor: const Color(0xFF2A6F6F),
       body: Center(
         child: Column(
-          mainAxisSize: MainAxisSize.min, // Centers content
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              'assets/images/vr_golf_logo.png', // Make sure the asset path is correct
+              'assets/images/vr_golf_logo.png',
               width: 200,
             ),
             const SizedBox(height: 20),
@@ -66,6 +72,15 @@ class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
                 fontSize: 32,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              "Welcome, $userName!",
+              style: const TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
               ),
             ),
             const SizedBox(height: 30),

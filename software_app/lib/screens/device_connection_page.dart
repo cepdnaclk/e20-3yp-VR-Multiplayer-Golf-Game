@@ -1,4 +1,6 @@
+// deviceconnection.dart
 import 'package:flutter/material.dart';
+import 'bluetooth_manager.dart';
 import 'home_page.dart';
 
 class DeviceConnectionPage extends StatefulWidget {
@@ -14,37 +16,33 @@ class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
   bool headsetConnected = false;
   bool allConnected = false;
 
-  String userName = 'Player'; // Default name
+  String userName = 'Player'; // Default
+  final BluetoothManager bluetoothManager = BluetoothManager();
 
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      final args = ModalRoute.of(context)?.settings.arguments as Map?;
-      if (args != null && args.containsKey('name')) {
-        setState(() {
-          userName = args['name'];
-        });
-      }
-    });
-    _simulateConnection();
+    _initBluetoothAndConnect();
   }
 
-  void _simulateConnection() async {
-    await Future.delayed(const Duration(seconds: 2));
-    setState(() => handBandConnected = true);
+  Future<void> _initBluetoothAndConnect() async {
+    await bluetoothManager.getBondedDevices();
 
-    await Future.delayed(const Duration(seconds: 2));
-    setState(() => golfStickConnected = true);
+    // Update these names as per your HC-05 paired devices
+    final handBand = await bluetoothManager.connectToDevice("Hand Band");
+    setState(() => handBandConnected = handBand != null);
 
-    await Future.delayed(const Duration(seconds: 2));
+    final golfStick = await bluetoothManager.connectToDevice("Golf Stick");
+    setState(() => golfStickConnected = golfStick != null);
+
+    final headset = await bluetoothManager.connectToDevice("Headset");
     setState(() {
-      headsetConnected = true;
-      allConnected = true;
+      headsetConnected = headset != null;
+      allConnected = handBandConnected && golfStickConnected && headsetConnected;
     });
 
-    await Future.delayed(const Duration(seconds: 1));
-    if (mounted) {
+    if (allConnected && mounted) {
+      await Future.delayed(const Duration(seconds: 1));
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const HomePage()),
@@ -54,6 +52,11 @@ class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
 
   @override
   Widget build(BuildContext context) {
+    final args = ModalRoute.of(context)?.settings.arguments as Map?;
+    if (args != null && args.containsKey('name')) {
+      userName = args['name'];
+    }
+
     return Scaffold(
       backgroundColor: const Color(0xFF2A6F6F),
       body: Center(

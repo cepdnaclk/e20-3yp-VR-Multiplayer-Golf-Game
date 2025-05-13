@@ -1,5 +1,7 @@
+// deviceconnection.dart
 import 'package:flutter/material.dart';
-import 'home_page.dart'; // Ensure this import is correct
+import 'bluetooth_manager.dart';
+import 'home_page.dart';
 
 class DeviceConnectionPage extends StatefulWidget {
   const DeviceConnectionPage({super.key});
@@ -14,29 +16,33 @@ class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
   bool headsetConnected = false;
   bool allConnected = false;
 
+  String userName = 'Player'; // Default
+  final BluetoothManager bluetoothManager = BluetoothManager();
+
   @override
   void initState() {
     super.initState();
-    _simulateConnection();
+    _initBluetoothAndConnect();
   }
 
-  void _simulateConnection() async {
-    // Simulating Bluetooth device connections with delays
-    await Future.delayed(const Duration(seconds: 2));
-    setState(() => handBandConnected = true);
+  Future<void> _initBluetoothAndConnect() async {
+    await bluetoothManager.getBondedDevices();
 
-    await Future.delayed(const Duration(seconds: 2));
-    setState(() => golfStickConnected = true);
+    // Update these names as per your HC-05 paired devices
+    final handBand = await bluetoothManager.connectToDevice("Hand Band");
+    setState(() => handBandConnected = handBand != null);
 
-    await Future.delayed(const Duration(seconds: 2));
+    final golfStick = await bluetoothManager.connectToDevice("Golf Stick");
+    setState(() => golfStickConnected = golfStick != null);
+
+    final headset = await bluetoothManager.connectToDevice("Headset");
     setState(() {
-      headsetConnected = true;
-      allConnected = true; // All devices connected
+      headsetConnected = headset != null;
+      allConnected = handBandConnected && golfStickConnected && headsetConnected;
     });
 
-    // Navigate to HomePage after a short delay
-    await Future.delayed(const Duration(seconds: 1));
-    if (mounted) {
+    if (allConnected && mounted) {
+      await Future.delayed(const Duration(seconds: 1));
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const HomePage()),
@@ -46,16 +52,19 @@ class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
 
   @override
   Widget build(BuildContext context) {
+    final args = ModalRoute.of(context)?.settings.arguments as Map?;
+    if (args != null && args.containsKey('name')) {
+      userName = args['name'];
+    }
+
     return Scaffold(
-      backgroundColor: const Color(0xFF2A6F6F), // Matching Splash Screen BG
+      backgroundColor: const Color(0xFF2A6F6F),
       body: Center(
         child: Column(
-          mainAxisSize: MainAxisSize.min, // Centers content
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              'assets/images/vr_golf_logo.png', // Make sure the asset path is correct
+              'assets/images/vr_golf_logo.png',
               width: 200,
             ),
             const SizedBox(height: 20),
@@ -66,6 +75,15 @@ class _DeviceConnectionPageState extends State<DeviceConnectionPage> {
                 fontSize: 32,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              "Welcome, $userName!",
+              style: const TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
               ),
             ),
             const SizedBox(height: 30),

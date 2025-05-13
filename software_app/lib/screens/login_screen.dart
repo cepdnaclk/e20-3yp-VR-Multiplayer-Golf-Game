@@ -7,25 +7,46 @@ class LoginScreen extends StatelessWidget {
 
   Future<void> _handleGoogleSignIn(BuildContext context) async {
     try {
-      final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+      final GoogleSignIn googleSignIn = GoogleSignIn();
+
+      // Check if the user is already signed in
+      final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
       if (googleUser == null) {
-        // User cancelled the sign-in
+        // User canceled the sign-in, so do nothing
         return;
       }
 
       final GoogleSignInAuthentication googleAuth =
           await googleUser.authentication;
 
+      // Use the Google account to create Firebase credentials
       final OAuthCredential credential = GoogleAuthProvider.credential(
         accessToken: googleAuth.accessToken,
         idToken: googleAuth.idToken,
       );
 
-      // Sign in to Firebase with the Google credential
-      await FirebaseAuth.instance.signInWithCredential(credential);
+      // Sign in to Firebase with the credentials
+      final UserCredential userCredential =
+          await FirebaseAuth.instance.signInWithCredential(credential);
 
-      // Navigate to the next screen
-      Navigator.pushReplacementNamed(context, '/deviceConnection');
+      final user = userCredential.user;
+
+      // Check if the user exists and redirect to the device connection page
+      if (user != null) {
+        final userName = user.displayName ?? 'Guest';
+        final userEmail = user.email ?? '';
+
+        // Navigate to device connection page and pass user info
+        Navigator.pushReplacementNamed(
+          context,
+          '/deviceConnection',
+          arguments: {
+            'name': userName,
+            'email': userEmail,
+            'uid': user.uid,
+          },
+        );
+      }
     } catch (error) {
       print('Google Sign-In Error: $error');
       ScaffoldMessenger.of(context).showSnackBar(
@@ -68,8 +89,7 @@ class LoginScreen extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
                 foregroundColor: Colors.black,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
@@ -83,8 +103,7 @@ class LoginScreen extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.teal.shade700,
                 foregroundColor: Colors.white,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),

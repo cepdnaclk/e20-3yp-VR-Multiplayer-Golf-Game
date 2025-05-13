@@ -1,6 +1,8 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vr_golf">
+
     <application
-        android:label="software_app"
+        android:label="flutter_application_1"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -8,6 +10,7 @@
             android:exported="true"
             android:launchMode="singleTop"
             android:taskAffinity=""
+            android:screenOrientation="landscape"
             android:theme="@style/LaunchTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"

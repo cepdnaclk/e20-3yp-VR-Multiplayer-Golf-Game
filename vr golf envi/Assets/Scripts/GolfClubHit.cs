@@ -6,9 +6,13 @@ public class GolfClubHit : MonoBehaviour
     private Vector3 previousPosition;
     private Vector3 velocity;
 
+    void Start()
+    {
+        previousPosition = transform.position;
+    }
+
     void Update()
     {
-        // Track club velocity manually
         velocity = (transform.position - previousPosition) / Time.deltaTime;
         previousPosition = transform.position;
     }
@@ -18,7 +22,9 @@ public class GolfClubHit : MonoBehaviour
         if (collision.gameObject.CompareTag("GolfBall"))
         {
             Rigidbody ballRb = collision.gameObject.GetComponent<Rigidbody>();
-            ballRb.AddForce(velocity * forceMultiplier, ForceMode.Impulse);
+            Vector3 hitForce = velocity * forceMultiplier;
+            Debug.Log("Hitting ball with force: " + hitForce);
+            ballRb.AddForce(hitForce, ForceMode.Impulse);
         }
     }
 }

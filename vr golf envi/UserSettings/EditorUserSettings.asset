@@ -22,6 +22,7 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-4:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       value: 5204005e57015f0c550b557142275e4440161e2f7e707e672b2c4a62bbb23668
       flags: 0
     RecentlyUsedSceneGuid-5:
@@ -30,6 +31,11 @@ EditorUserSettings:
       value: 57010d5e5051510c095d5c7642740f441715192b7d7b77632c714f36e6b2373d
       flags: 0
     RecentlyUsedSceneGuid-5:
+=======
+      value: 57010d5e5051510c095d5c7642740f441715192b7d7b77632c714f36e6b2373d
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+>>>>>>> Stashed changes
       value: 530104565d56595f5c5e5c7240730f404647487a7c7876607c794d63b2b06468
       flags: 0
     RecentlyUsedSceneGuid-6:
@@ -43,6 +49,9 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 0600035e52000a08580b0a2340765943454341297b7125322b7c4461b6b1326b
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       flags: 0
     UnityEditor.ShaderGraph.Blackboard:

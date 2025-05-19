@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{174FC5A0-BB48-6490-C497-115316998313}|Assembly-CSharp.csproj|D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\assets\\scripts\\golfclubhit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{174FC5A0-BB48-6490-C497-115316998313}|Assembly-CSharp.csproj|d:\\e20-3yp-vr-multiplayer-golf-game\\vr golf envi\\assets\\scripts\\camerafollowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{174FC5A0-BB48-6490-C497-115316998313}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174FC5A0-BB48-6490-C497-115316998313}|Assembly-CSharp.csproj|d:\\e20-3yp-vr-multiplayer-golf-game\\vr golf envi\\assets\\scripts\\golfclubhit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{174FC5A0-BB48-6490-C497-115316998313}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\golfclubhit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{174FC5A0-BB48-6490-C497-115316998313}|Assembly-CSharp.csproj|d:\\e20-3yp-vr-multiplayer-golf-game\\vr golf envi\\assets\\scripts\\ballwaterhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{174FC5A0-BB48-6490-C497-115316998313}|Assembly-CSharp.csproj|D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\assets\\scripts\\ballwaterhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{174FC5A0-BB48-6490-C497-115316998313}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ballwaterhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -41,11 +45,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "CameraFollowController.cs",
+              "DocumentMoniker": "D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Assets\\Scripts\\CameraFollowController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollowController.cs",
+              "ToolTip": "D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Assets\\Scripts\\CameraFollowController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraFollowController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T10:59:40.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BallWaterHandler.cs",
               "DocumentMoniker": "D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Assets\\Scripts\\BallWaterHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BallWaterHandler.cs",
@@ -53,12 +70,11 @@
               "RelativeToolTip": "Assets\\Scripts\\BallWaterHandler.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T15:35:49.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T15:35:49.689Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BallCollisionHandler.cs",
               "DocumentMoniker": "D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Assets\\Scripts\\BallCollisionHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BallCollisionHandler.cs",
@@ -70,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GolfClubHit.cs",
               "DocumentMoniker": "D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Assets\\Scripts\\GolfClubHit.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GolfClubHit.cs",
@@ -83,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GolfBall.cs",
               "DocumentMoniker": "D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Assets\\Scripts\\GolfBall.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GolfBall.cs",
@@ -95,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FlagSpawner.cs",
               "DocumentMoniker": "D:\\3yp_new\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Assets\\Scripts\\FlagSpawner.cs",
               "RelativeDocumentMoniker": "..\\..\\3yp_new\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Assets\\Scripts\\FlagSpawner.cs",
@@ -106,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "HoleTrigger.cs",
               "DocumentMoniker": "D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Assets\\Scripts\\HoleTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HoleTrigger.cs",
@@ -118,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Water_flow.cs",
               "DocumentMoniker": "D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Assets\\Scripts\\Water_flow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Water_flow.cs",
@@ -130,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Lit.shader",
               "DocumentMoniker": "D:\\e20-3yp-VR-Multiplayer-Golf-Game\\vr golf envi\\Library\\PackageCache\\com.unity.render-pipelines.universal@9c8ceca205de\\Shaders\\Lit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@9c8ceca205de\\Shaders\\Lit.shader",
@@ -138,7 +154,8 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@9c8ceca205de\\Shaders\\Lit.shader",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-05-11T09:16:14.435Z"
+              "WhenOpened": "2025-05-11T09:16:14.435Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 Using pre-set license
 Built from '6000.0/release' branch; Version is '6000.0.45f1 (d91bd3d4e081) revision 14228435'; Using compiler version '193933523'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 16202 MB
@@ -17,7 +15,7 @@ D:/e20-3yp-VR-Multiplayer-Golf-Game/vr golf envi
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63945
+53442
 -job-worker-count
 7
 -background-job-worker-count
@@ -61,10 +59,12 @@ D:/e20-3yp-VR-Multiplayer-Golf-Game/vr golf envi
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12140]  Target information:
+Player connection [4304]  Target information:
 
-Player connection [12140] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [12140] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [4304]  * "[IP] 192.168.144.195 [Port] 0 [Flags] 2 [Guid] 2870650985 [EditorId] 2870650985 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IP9RLO6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [4304] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [4304] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,7 +76,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 13.86 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 16.51 ms, found 13 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.45f1 (d91bd3d4e081)
 [Subsystems] Discovering subsystems at path D:/Program Files/Unity Hub/6000.0.45f1/Editor/Data/Resources/UnitySubsystems
@@ -92,45 +92,45 @@ Initialize mono
 Mono path[0] = 'D:/Program Files/Unity Hub/6000.0.45f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/Unity Hub/6000.0.45f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Program Files/Unity Hub/6000.0.45f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Program Files/Unity Hub/6000.0.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Program Files/Unity Hub/6000.0.45f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.002195 seconds.
-- Loaded All Assemblies, in  0.342 seconds
+Registered in 0.002039 seconds.
+- Loaded All Assemblies, in  0.371 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 227 ms
+Android Extension - Scanning For ADB Devices 282 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.586 seconds
-Domain Reload Profiling: 928ms
-	BeginReloadAssembly (110ms)
+- Finished resetting the current domain, in  0.657 seconds
+Domain Reload Profiling: 1027ms
+	BeginReloadAssembly (118ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (142ms)
-		LoadAssemblies (109ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (154ms)
+		LoadAssemblies (118ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (139ms)
-			TypeCache.Refresh (137ms)
-				TypeCache.ScanAssembly (125ms)
+		AnalyzeDomain (150ms)
+			TypeCache.Refresh (148ms)
+				TypeCache.ScanAssembly (136ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (587ms)
+	FinalizeReload (657ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (538ms)
+		SetupLoadedEditorAssemblies (605ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (311ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (112ms)
+			InitializePlatformSupportModulesInManaged (369ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (121ms)
 			ProcessInitializeOnLoadMethodAttributes (62ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -141,15 +141,15 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.821 seconds
-Refreshing native plugins compatible for Editor in 10.60 ms, found 13 plugins.
+- Loaded All Assemblies, in  0.924 seconds
+Refreshing native plugins compatible for Editor in 11.12 ms, found 13 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 10.30 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 11.99 ms, found 13 plugins.
 Mirror | mirror-networking.com | discord.gg/N9QVxbM
 Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -158,64 +158,68 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.996 seconds
-Domain Reload Profiling: 1817ms
-	BeginReloadAssembly (150ms)
+- Finished resetting the current domain, in  1.057 seconds
+Domain Reload Profiling: 1980ms
+	BeginReloadAssembly (172ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (592ms)
-		LoadAssemblies (346ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (656ms)
+		LoadAssemblies (389ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (329ms)
-			TypeCache.Refresh (236ms)
-				TypeCache.ScanAssembly (214ms)
-			BuildScriptInfoCaches (70ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (997ms)
+		AnalyzeDomain (362ms)
+			TypeCache.Refresh (265ms)
+				TypeCache.ScanAssembly (241ms)
+			BuildScriptInfoCaches (73ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1058ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (807ms)
+		SetupLoadedEditorAssemblies (865ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
+			InitializePlatformSupportModulesInManaged (13ms)
 			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (119ms)
-			ProcessInitializeOnLoadAttributes (512ms)
-			ProcessInitializeOnLoadMethodAttributes (159ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			BeforeProcessingInitializeOnLoad (133ms)
+			ProcessInitializeOnLoadAttributes (545ms)
+			ProcessInitializeOnLoadMethodAttributes (166ms)
+			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 10.26 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 12.55 ms, found 13 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 326 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8198 unused Assets / (10.6 MB). Loaded Objects now: 8908.
-Memory consumption went from 230.4 MB to 219.9 MB.
-Total: 13.235200 ms (FindLiveObjects: 1.071500 ms CreateObjectMapping: 0.982800 ms MarkObjects: 5.986100 ms  DeleteObjects: 5.193500 ms)
+Unloading 8198 unused Assets / (10.4 MB). Loaded Objects now: 8908.
+Memory consumption went from 232.4 MB to 222.0 MB.
+Total: 12.618100 ms (FindLiveObjects: 1.044500 ms CreateObjectMapping: 1.121700 ms MarkObjects: 5.494300 ms  DeleteObjects: 4.956300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 282859.105959 seconds.
-  path: Assets/New Terrain 2.asset
-  artifactKey: Guid(3d7a4b50cb19fb44aaa0f507bf805e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 2.asset using Guid(3d7a4b50cb19fb44aaa0f507bf805e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fefbaf1cbdde5752b6366be0808df2e1') in 0.0231688 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 378829.016586 seconds.
+  path: Assets/my assets/Free_Trees/Prefabs/Poplar_Tree.prefab
+  artifactKey: Guid(826b6a0b570e8460990010fa615b5a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/my assets/Free_Trees/Prefabs/Poplar_Tree.prefab using Guid(826b6a0b570e8460990010fa615b5a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df49574d69fc736a456f3a9914a4e822') in 0.4909307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/New Terrain 1.asset
-  artifactKey: Guid(fdc0a0b2a6f2d3e4cb6e85046edd745e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 1.asset using Guid(fdc0a0b2a6f2d3e4cb6e85046edd745e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47cdeb88a944ba8979d993ee3b3bd45f') in 0.0536243 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+  Time since last request: 0.000029 seconds.
+  path: Assets/my assets/Free_Trees/Prefabs/Palm_Tree.prefab
+  artifactKey: Guid(c6b7fb383a3534b039692b5485b6e739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/my assets/Free_Trees/Prefabs/Palm_Tree.prefab using Guid(c6b7fb383a3534b039692b5485b6e739) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3727c0338aaa3ef1ed5646e52e5ebd3') in 0.0236955 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+========================================================================
+Received Import Request.
+  Time since last request: 3701.922002 seconds.
+  path: Assets/my assets/MamkinEnthusiast/3D Mini Garden Props/Prefabs/Mint.prefab
+  artifactKey: Guid(109b89959e9e44f08a578ea27c235f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/my assets/MamkinEnthusiast/3D Mini Garden Props/Prefabs/Mint.prefab using Guid(109b89959e9e44f08a578ea27c235f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4beadf630db23828b7d97d0d9c29635c') in 1.9148051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+

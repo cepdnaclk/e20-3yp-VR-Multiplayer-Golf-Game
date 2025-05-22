@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|win32">
+      <Configuration>Profile</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{00FFA825-53E9-39D5-B0A7-BBD29BED30D4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>flutter_assemble</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\CMakeFiles\76d9942eeebb7e82c29860172a506a35\flutter_windows.dll.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Generating D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_windows.dll, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_export.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_windows.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_messenger.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter PROJECT_DIR=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app FLUTTER_ROOT=C:\flutter FLUTTER_EPHEMERAL_DIR=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral PROJECT_DIR=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app FLUTTER_TARGET=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\.dart_tool\package_config.json C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.dll;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_export.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_messenger.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">Generating D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_windows.dll, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_export.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_windows.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_messenger.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter PROJECT_DIR=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app FLUTTER_ROOT=C:\flutter FLUTTER_EPHEMERAL_DIR=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral PROJECT_DIR=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app FLUTTER_TARGET=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\.dart_tool\package_config.json C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Profile
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.dll;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_export.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_messenger.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Generating D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_windows.dll, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_export.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_windows.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_messenger.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter PROJECT_DIR=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app FLUTTER_ROOT=C:\flutter FLUTTER_EPHEMERAL_DIR=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral PROJECT_DIR=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app FLUTTER_TARGET=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\.dart_tool\package_config.json C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.dll;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_export.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_messenger.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\CMakeFiles\d7b143dda70bb0156672a45e6af15f7c\flutter_assemble.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.dll;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_export.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_messenger.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.dll;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_export.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_messenger.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.dll;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_export.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_windows.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_messenger.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows -BD:/projects/e20-3yp-VR-Multiplayer-Golf-Game/build --check-stamp-file D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/build/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">Building Custom Rule D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows -BD:/projects/e20-3yp-VR-Multiplayer-Golf-Game/build --check-stamp-file D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/build/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows -BD:/projects/e20-3yp-VR-Multiplayer-Golf-Game/build --check-stamp-file D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/build/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\new_app\app\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\flutter\CMakeFiles\flutter_assemble">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\ZERO_CHECK.vcxproj">
+      <Project>{BBFB6045-CA90-3C39-B34D-BD03609B6135}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,460 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-bc8428200cb424ebe997.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2
+					]
+				},
+				{
+					"build" : "flutter",
+					"jsonFile" : "directory-flutter-Debug-79e0260f2327d8493c28.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "flutter",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "runner",
+					"jsonFile" : "directory-runner-Debug-86f38b7dcb6f33eb04e4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "runner",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "app",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "runner",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-c673c3600447776db54d.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@056c4f61b0156d1d9b06",
+					"jsonFile" : "target-ALL_BUILD-Debug-37dc19114e34e682bd0c.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-f27bd344a262186cc5a1.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "app::@056c4f61b0156d1d9b06",
+					"jsonFile" : "target-app-Debug-1dcbb616664cc7da1338.json",
+					"name" : "app",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_assemble::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_assemble-Debug-b400969d11cc93aef9c1.json",
+					"name" : "flutter_assemble",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_wrapper_app::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_wrapper_app-Debug-68300b29a9747002f202.json",
+					"name" : "flutter_wrapper_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_wrapper_plugin::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_wrapper_plugin-Debug-ce8e9c86593aff0f0936.json",
+					"name" : "flutter_wrapper_plugin",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Profile-b7741fedd082204991c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2
+					]
+				},
+				{
+					"build" : "flutter",
+					"jsonFile" : "directory-flutter-Profile-79e0260f2327d8493c28.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "flutter",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "runner",
+					"jsonFile" : "directory-runner-Profile-86f38b7dcb6f33eb04e4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "runner",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"name" : "Profile",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "app",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "runner",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Profile-c673c3600447776db54d.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@056c4f61b0156d1d9b06",
+					"jsonFile" : "target-ALL_BUILD-Profile-37dc19114e34e682bd0c.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Profile-f27bd344a262186cc5a1.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "app::@056c4f61b0156d1d9b06",
+					"jsonFile" : "target-app-Profile-649602f6c837c9d10eda.json",
+					"name" : "app",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_assemble::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_assemble-Profile-b400969d11cc93aef9c1.json",
+					"name" : "flutter_assemble",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_wrapper_app::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_wrapper_app-Profile-c46a04c8985526d401e6.json",
+					"name" : "flutter_wrapper_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_wrapper_plugin::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_wrapper_plugin-Profile-943cfd3c54b83e90dab2.json",
+					"name" : "flutter_wrapper_plugin",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-ae10184987d8cfc2a3cc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2
+					]
+				},
+				{
+					"build" : "flutter",
+					"jsonFile" : "directory-flutter-Release-79e0260f2327d8493c28.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "flutter",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "runner",
+					"jsonFile" : "directory-runner-Release-86f38b7dcb6f33eb04e4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "runner",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "app",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "runner",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-c673c3600447776db54d.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@056c4f61b0156d1d9b06",
+					"jsonFile" : "target-ALL_BUILD-Release-37dc19114e34e682bd0c.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-f27bd344a262186cc5a1.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "app::@056c4f61b0156d1d9b06",
+					"jsonFile" : "target-app-Release-35699de6ecf5b7e128c2.json",
+					"name" : "app",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_assemble::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_assemble-Release-b400969d11cc93aef9c1.json",
+					"name" : "flutter_assemble",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_wrapper_app::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_wrapper_app-Release-54c061801eac33e063d2.json",
+					"name" : "flutter_wrapper_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_wrapper_plugin::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_wrapper_plugin-Release-029d744c97dedc02e900.json",
+					"name" : "flutter_wrapper_plugin",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/build",
+		"source" : "D:/projects/e20-3yp-VR-Multiplayer-Golf-Game/new_app/app/windows"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

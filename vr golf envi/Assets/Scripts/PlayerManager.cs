@@ -1,5 +1,6 @@
 using Photon.Pun;
 using UnityEngine;
+using Photon.Realtime;
 
 public class PlayerManager : MonoBehaviourPunCallbacks
 {
@@ -22,6 +23,15 @@ public class PlayerManager : MonoBehaviourPunCallbacks
             // This is local player, camera and rig should be active
             vrCamera.SetActive(true);
             xrRig.SetActive(true);
+            
+            photonView.Synchronization = ViewSynchronization.ReliableDeltaCompressed;
         }
+    }
+
+    // 🔧 Add this method for turn-based club control
+    public void SetClubActive(bool isActive)
+    {
+        if (golfClub != null)
+            golfClub.SetActive(isActive);
     }
 }

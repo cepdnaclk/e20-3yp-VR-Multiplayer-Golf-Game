@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         Debug.Log("Joined room successfully.");
 
-        Vector3 spawnPosition = new Vector3(Random.Range(8, 12), Random.Range(8, 12), Random.Range(8, 12));
+        Vector3 spawnPosition = new Vector3(Random.Range(160, 165), Random.Range(8, 12), Random.Range(170, 177));
         PhotonNetwork.Instantiate("PlayerManager", spawnPosition, Quaternion.identity);
 
         // ✅ Only the MasterClient should start the first turn

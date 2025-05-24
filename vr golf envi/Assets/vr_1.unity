@@ -818,7 +818,7 @@ Transform:
   m_GameObject: {fileID: 706844808}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 637, y: 3.5, z: 384}
+  m_LocalPosition: {x: 637, y: 0.1, z: 384}
   m_LocalScale: {x: 13.280184, y: 13.280184, z: 13.280184}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1241,7 +1241,7 @@ Transform:
   m_GameObject: {fileID: 1094022405}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 617.9992, y: 3.5, z: 891}
+  m_LocalPosition: {x: 617.9992, y: 0.1, z: 891}
   m_LocalScale: {x: 19.815535, y: 19.815535, z: 19.815535}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1886,6 +1886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1616667030}
   - component: {fileID: 1616667031}
+  - component: {fileID: 1616667032}
   m_Layer: 0
   m_Name: HoleTrigger
   m_TagString: Untagged
@@ -1929,6 +1930,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1616667032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616667029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 080d99dd34bcb6842807e8a180ed15c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1647037670
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,10 +1,14 @@
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class GolfClubHit : MonoBehaviour
 {
     public float forceMultiplier = 5f;
     private Vector3 previousPosition;
     private Vector3 velocity;
+
+    private PhotonView photonView;
 
     void Start()
     {
@@ -25,6 +29,11 @@ public class GolfClubHit : MonoBehaviour
             Vector3 hitForce = velocity * forceMultiplier;
             Debug.Log("Hitting ball with force: " + hitForce);
             ballRb.AddForce(hitForce, ForceMode.Impulse);
+
+            if (photonView.IsMine) // Or golf hole or after certain delay
+            {
+                TurnManager.Instance.SwitchTurn();
+            }
         }
     }
 }

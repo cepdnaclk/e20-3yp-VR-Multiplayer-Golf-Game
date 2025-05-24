@@ -8,9 +8,21 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #222;
-    padding: lem 0;
+    background-color: rgb(15,55,21,0.7);
     z-index: 0;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
 }
 
 .navbar ul{
@@ -35,16 +47,45 @@ body{
 }
 
 .navbar a.active{
-    color: #4CAF50;
+    color: rgb(15,55,21);
     background-color: white;
 }
 
 section{
     height: 100vh;
     padding: 50px 20px;
-    margin-top: 60px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: left;
 }
+
+#home { 
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    
+
+    background: linear-gradient(
+      to bottom,
+      rgba(15, 55, 21),    /* top */
+      rgba(15, 55, 21,0.95)20%,
+      rgba(15, 55, 21, 0.7) 
+    );
+  }
+
+  #home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transition: opacity 0.5s ease;
+    }
+
+  

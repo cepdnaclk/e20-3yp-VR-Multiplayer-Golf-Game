@@ -1,5 +1,18 @@
 const section = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
+const toggleBtn = document.getElementById('menu-toggle');
+const navLinksContainer = document.getElementById('nav-links'); 
+
+toggleBtn.addEventListener('click', () => {
+    navLinksContainer.classList.toggle('active');
+});
+  
+// Hide dropdown when a nav link is clicked (for mobile)
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinksContainer.classList.remove('active');
+    });
+});
 
 window.addEventListener('scroll', () => {
     let current = '';
@@ -17,5 +30,4 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
-}
-);
+});

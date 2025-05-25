@@ -26,5 +26,6 @@ public class BallCollisionHandler : MonoBehaviour
                 audioSource.Play();
             }
         }
+        
     }
 }

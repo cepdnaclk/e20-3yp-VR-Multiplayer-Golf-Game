@@ -73,6 +73,7 @@ MonoBehaviour:
   golfBall: {fileID: 6042641054043542067}
   xrRig: {fileID: 3577092758486860025}
   vrCamera: {fileID: 9113240835243346321}
+  turnIndicatorText: {fileID: 0}
 --- !u!1 &1147366837858547979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2404,7 +2405,10 @@ PrefabInstance:
       addedObject: {fileID: 3416055666417626420}
     - targetCorrespondingSourceObject: {fileID: 2099316281507514234, guid: 2fbb6c85cd0b18a409dfae33e4319200, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4399359233008429229}
+      addedObject: {fileID: -8206625620399831712}
+    - targetCorrespondingSourceObject: {fileID: 2099316281507514234, guid: 2fbb6c85cd0b18a409dfae33e4319200, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7038558723018138368}
   m_SourcePrefab: {fileID: 100100000, guid: 2fbb6c85cd0b18a409dfae33e4319200, type: 3}
 --- !u!4 &4830534208707081816 stripped
 Transform:
@@ -2471,7 +2475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPosition: {x: 320.2, y: 81, z: 795}
   splashSound: {fileID: 8300000, guid: 7f5b1f76d0c380549a767231ee0f7db6, type: 3}
---- !u!114 &4399359233008429229
+--- !u!114 &-8206625620399831712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2480,7 +2484,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 6042641054043542067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f26f3d11846e5884c8fdf48ab0c18951, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultiplier: 1e+12
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 0
+  ObservedComponents:
+  - {fileID: -7038558723018138368}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &-7038558723018138368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042641054043542067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1

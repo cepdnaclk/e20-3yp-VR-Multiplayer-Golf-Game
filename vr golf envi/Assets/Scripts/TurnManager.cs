@@ -11,8 +11,18 @@ public class TurnManager : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
-        photonView = GetComponent<PhotonView>(); // 💡 Required for RPCs
+        DontDestroyOnLoad(gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+            Debug.Log("TurnManager instance set.");
+        }
+        else
+        {
+            Debug.LogWarning("Multiple TurnManager instances found!");
+        }
+
+        photonView = GetComponent<PhotonView>();
     }
 
     public void SwitchTurn()
@@ -24,6 +34,7 @@ public class TurnManager : MonoBehaviourPunCallbacks
     [PunRPC]
     void RPC_SwitchTurn(int activePlayerIndex)
     {
+        Debug.Log("RPC_SwitchTurn called. Active index: " + activePlayerIndex);
         var managers = FindObjectsByType<PlayerManager>(FindObjectsSortMode.None);
         for (int i = 0; i < PhotonNetwork.PlayerList.Length; i++)
         {

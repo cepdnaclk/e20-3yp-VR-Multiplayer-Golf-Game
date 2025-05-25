@@ -2557,7 +2557,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
+    - Assets/my assets/Sport_Balls
+=======
     - Assets/Resources
+>>>>>>> 5cbdec5e9b286a6829615304b5de805dad133557
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0

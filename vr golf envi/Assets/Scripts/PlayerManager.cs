@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     public GameObject xrRig; // Reference to XR Rig root
     public GameObject vrCamera; // Reference to Main Camera inside XR Rig
     public GameObject turnIndicatorText; // Assign from Inspector
+    
     void Start()
     {
         if (!photonView.IsMine)
@@ -34,10 +35,11 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     // 🔧 Add this method for turn-based club control
     public void SetClubActive(bool isActive)
     {
-        if (photonView.IsMine && golfClub != null) // ✅ Extra safety
+        if (photonView.IsMine)
+        {
             golfClub.SetActive(isActive);
-
-        if (photonView.IsMine && turnIndicatorText != null)
-            turnIndicatorText.SetActive(!isActive);
+            if (turnIndicatorText != null)
+                turnIndicatorText.SetActive(!isActive);
+        }
     }
 }

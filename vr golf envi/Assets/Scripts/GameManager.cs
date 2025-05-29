@@ -24,10 +24,10 @@ public class GameManager : MonoBehaviourPunCallbacks
         Vector3 spawnPosition = new Vector3(Random.Range(160, 165), Random.Range(8, 12), Random.Range(170, 177));
         PhotonNetwork.Instantiate("PlayerManager", spawnPosition, Quaternion.identity);
 
-        // ✅ Only the MasterClient should start the first turn
-        if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        // ✅ MasterClient instantiates TurnManager once
+        if (PhotonNetwork.IsMasterClient)
         {
-            TurnManager.Instance.SwitchTurn();
+            PhotonNetwork.Instantiate("TurnManager", Vector3.zero, Quaternion.identity);
         }
     }
 

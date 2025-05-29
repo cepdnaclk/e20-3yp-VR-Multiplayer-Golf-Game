@@ -12,7 +12,8 @@ public class GolfClubHit : MonoBehaviour
 
     void Start()
     {
-        photonView = GetComponent<PhotonView>();
+        Debug.Log("photonView.IsMine = " + photonView.IsMine + " | Owner: " + photonView.Owner.NickName);
+        photonView = GetComponentInParent<PhotonView>(); // ✅ Gets the player's PhotonView
         previousPosition = transform.position;
 
         Rigidbody rb = GetComponent<Rigidbody>();
@@ -35,6 +36,8 @@ public class GolfClubHit : MonoBehaviour
     {
         Debug.Log("Collision detected with: " + collision.gameObject.name + ", tag: " + collision.gameObject.tag);
         Debug.Log("Club velocity: " + velocity.magnitude);
+        Debug.Log("photonView.IsMine = " + photonView.IsMine);
+
 
         if (!photonView.IsMine) return;
 
@@ -43,13 +46,18 @@ public class GolfClubHit : MonoBehaviour
             Rigidbody ballRb = collision.gameObject.GetComponent<Rigidbody>();
 
             Vector3 direction = -collision.contacts[0].normal; // better collision normal
-            Vector3 hitForce = direction * velocity.magnitude * forceMultiplier;
+            Vector3 hitForce = forceMultiplier * velocity.magnitude * direction;
 
             Debug.Log($"→ Applying force: {hitForce} | direction: {direction} | velocity: {velocity} | magnitude: {velocity.magnitude}");
             Debug.DrawRay(collision.contacts[0].point, hitForce, Color.red, 1f);
 
-            ballRb.AddForce(hitForce, ForceMode.Impulse);
+            ballRb.AddForce(forceMultiplier * velocity.magnitude * velocity.normalized, ForceMode.VelocityChange);
 
+            if (TurnManager.Instance == null)
+            {
+                Debug.LogError("❌ TurnManager.Instance is null! Did you instantiate it?");
+                return;
+            }
             Debug.Log("Switching turn...");
             TurnManager.Instance.SwitchTurn();
         }

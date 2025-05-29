@@ -23,7 +23,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4444551842611298218
 Transform:
   m_ObjectHideFlags: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 3
+  Synchronization: 1
   OwnershipTransfer: 0
   observableSearch: 0
   ObservedComponents:
@@ -214,4 +214,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26f3d11846e5884c8fdf48ab0c18951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultiplier: 10
+  forceMultiplier: 10000

@@ -14,4 +14,15 @@ public class GolfBall : MonoBehaviour
     {
         rb.AddForce(force, ForceMode.Impulse);
     }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Vector3 testForce = Vector3.forward * 50f;
+            GetComponent<Rigidbody>().AddForce(testForce, ForceMode.Impulse);
+            Debug.Log("Test force applied via SPACE");
+        }
+    }
+
 }

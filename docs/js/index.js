@@ -1,24 +1,13 @@
-const section = document.querySelectorAll('section');
+const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
-const toggleBtn = document.getElementById('menu-toggle');
-const navLinksContainer = document.getElementById('nav-links'); 
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-links');
 
-toggleBtn.addEventListener('click', () => {
-    navLinksContainer.classList.toggle('active');
-});
-  
-// Hide dropdown when a nav link is clicked (for mobile)
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navLinksContainer.classList.remove('active');
-    });
-});
-
+// Highlight nav links on scroll
 window.addEventListener('scroll', () => {
     let current = '';
-
-    section.forEach(section => {
-        const sectionTop = section.offsetTop - 60;
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 70;
         const sectionHeight = section.clientHeight;
         if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
             current = section.getAttribute('id');
@@ -29,5 +18,17 @@ window.addEventListener('scroll', () => {
         if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
         }
+    });
+});
+
+// Toggle menu on small screens
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+});
+
+// ❗️Auto-close menu on nav link click (mobile view)
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
     });
 });

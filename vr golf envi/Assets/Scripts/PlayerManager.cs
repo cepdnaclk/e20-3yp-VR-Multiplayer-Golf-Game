@@ -9,7 +9,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     public GameObject xrRig; // Reference to XR Rig root
     public GameObject vrCamera; // Reference to Main Camera inside XR Rig
     public GameObject turnIndicatorText; // Assign from Inspector
-    
+
     void Start()
     {
         if (!photonView.IsMine)
@@ -29,6 +29,21 @@ public class PlayerManager : MonoBehaviourPunCallbacks
             xrRig.SetActive(true);
 
             photonView.Synchronization = ViewSynchronization.ReliableDeltaCompressed;
+
+            // Bluetooth connection for local player only
+            BluetoothManager manager = FindFirstObjectByType<BluetoothManager>();
+            if (manager != null)
+            {
+#if UNITY_ANDROID && !UNITY_EDITOR
+            Debug.Log("Attempting Bluetooth connection...");
+            // The connection is handled in BluetoothManager.Start() for Android,
+            // but you can call a connect method here if you want to trigger it manually.
+#endif
+            }
+            else
+            {
+                Debug.LogWarning("BluetoothManager not found in scene.");
+            }
         }
     }
 

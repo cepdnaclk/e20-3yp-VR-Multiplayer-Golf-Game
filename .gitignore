@@ -16,7 +16,8 @@
 # file on crash reports
 sysinfo.txt
 # Unity3D generated meta files
-*.pidb.meta
+
+*.DISABLED
 
 ###
 # VS/MD solution and project files
@@ -48,3 +49,4 @@ vr golf envi/Logs/shadercompiler-UnityShaderCompiler.exe-0.log
 vr golf envi/Logs/AssetImportWorker0.log
 vr golf envi/Logs/AssetImportWorker0.log
 vr golf envi/Logs/shadercompiler-UnityShaderCompiler.exe-0.log
+vr golf envi/Assets/Mirror/Examples/PlayerTest/PlayerTestScene/Lightmap-0_comp_dir.png.meta

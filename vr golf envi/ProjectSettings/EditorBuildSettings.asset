@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/MyScenes/level_2.unity
     guid: 3ef8a6c663eb246449ea2af2b5347ef0
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyScenes/LobbyScene.unity
     guid: 9ddc25b0b5585734f8eaa9b5b13fa6e6
   - enabled: 1

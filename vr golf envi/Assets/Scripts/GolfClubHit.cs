@@ -8,12 +8,10 @@ public class GolfClubHit : MonoBehaviour
     private Vector3 previousPosition;
     private Vector3 velocity;
 
-    private PhotonView photonView;
+    private PhotonView ownerPhotonView; // reference to owning PlayerManager's PhotonView
 
     void Start()
     {
-        Debug.Log("photonView.IsMine = " + photonView.IsMine + " | Owner: " + photonView.Owner.NickName);
-        photonView = GetComponentInParent<PhotonView>(); // ✅ Gets the player's PhotonView
         previousPosition = transform.position;
 
         Rigidbody rb = GetComponent<Rigidbody>();
@@ -23,8 +21,21 @@ public class GolfClubHit : MonoBehaviour
         Debug.Log("✅ Number of colliders on club: " + cols.Length);
         foreach (var c in cols)
             Debug.Log("   └▶ Collider type: " + c.GetType().Name + ", isTrigger: " + c.isTrigger);
+
+        if (ownerPhotonView == null)
+        {
+            Debug.LogError("❌ ownerPhotonView is not set! Cannot determine turn ownership.");
+        }
+        else
+        {
+            Debug.Log("✅ ownerPhotonView set. IsMine: " + ownerPhotonView.IsMine + " | Owner: " + ownerPhotonView.Owner.NickName);
+        }
     }
 
+    public void SetOwnerPhotonView(PhotonView view)
+    {
+        ownerPhotonView = view;
+    }
 
     void Update()
     {
@@ -36,31 +47,50 @@ public class GolfClubHit : MonoBehaviour
     {
         Debug.Log("Collision detected with: " + collision.gameObject.name + ", tag: " + collision.gameObject.tag);
         Debug.Log("Club velocity: " + velocity.magnitude);
-        Debug.Log("photonView.IsMine = " + photonView.IsMine);
+        Debug.Log("photonView.IsMine = " + ownerPhotonView.IsMine);
 
-
-        if (!photonView.IsMine) return;
+        if (!ownerPhotonView.IsMine) return;
 
         if (collision.gameObject.CompareTag("GolfBall"))
         {
-            Rigidbody ballRb = collision.gameObject.GetComponent<Rigidbody>();
+            // Check if the ball belongs to the local player
+            GolfBallOwner ballOwner = collision.gameObject.GetComponent<GolfBallOwner>();
+            if (ballOwner == null)
+            {
+                Debug.LogWarning("⛔ Ball does not have GolfBallOwner script");
+                return;
+            }
 
-            Vector3 direction = -collision.contacts[0].normal; // better collision normal
+            if (!ballOwner.OwnerView.IsMine)
+            {
+                Debug.Log("⛳ This ball does not belong to me. Ignoring hit.");
+                return;
+            }
+
+            if (velocity.magnitude < 0.2f)
+            {
+                Debug.Log("⛳ Club movement too slow. No force applied.");
+                return;
+            }
+
+            Rigidbody ballRb = collision.gameObject.GetComponent<Rigidbody>();
+            Vector3 direction = -collision.contacts[0].normal;
             Vector3 hitForce = forceMultiplier * velocity.magnitude * direction;
 
             Debug.Log($"→ Applying force: {hitForce} | direction: {direction} | velocity: {velocity} | magnitude: {velocity.magnitude}");
             Debug.DrawRay(collision.contacts[0].point, hitForce, Color.red, 1f);
 
-            ballRb.AddForce(forceMultiplier * velocity.magnitude * velocity.normalized, ForceMode.VelocityChange);
+            ballRb.AddForce(hitForce, ForceMode.VelocityChange);
 
+            // Switch turn
             if (TurnManager.Instance == null)
             {
                 Debug.LogError("❌ TurnManager.Instance is null! Did you instantiate it?");
                 return;
             }
-            Debug.Log("Switching turn...");
+
+            Debug.Log("✅ Switching turn...");
             TurnManager.Instance.SwitchTurn();
         }
     }
-
 }

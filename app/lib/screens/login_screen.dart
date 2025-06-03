@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -8,35 +9,27 @@ class LoginScreen extends StatelessWidget {
   Future<void> _handleGoogleSignIn(BuildContext context) async {
     try {
       final GoogleSignIn googleSignIn = GoogleSignIn();
-
-      // Check if the user is already signed in
       final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
-      if (googleUser == null) {
-        // User canceled the sign-in, so do nothing
-        return;
-      }
+
+      if (googleUser == null) return;
 
       final GoogleSignInAuthentication googleAuth =
           await googleUser.authentication;
 
-      // Use the Google account to create Firebase credentials
       final OAuthCredential credential = GoogleAuthProvider.credential(
         accessToken: googleAuth.accessToken,
         idToken: googleAuth.idToken,
       );
 
-      // Sign in to Firebase with the credentials
       final UserCredential userCredential = await FirebaseAuth.instance
           .signInWithCredential(credential);
 
       final user = userCredential.user;
 
-      // Check if the user exists and redirect to the device connection page
       if (user != null) {
         final userName = user.displayName ?? 'Guest';
         final userEmail = user.email ?? '';
 
-        // Navigate to device connection page and pass user info
         Navigator.pushReplacementNamed(
           context,
           '/deviceConnection',
@@ -53,63 +46,68 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
-      backgroundColor: const Color(0xFF2A6F6F),
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset('assets/images/vr_golf_logo.png', width: 200),
-            const SizedBox(height: 20),
-            const Text(
-              "VR GOLF\nMULTIPLAYER",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 32,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            stops: [0.0, 0.42, 1.0],
+            colors: [Color(0xFF051412), Color(0xFF0B7F72), Color(0xFF2E7B71)],
+          ),
+        ),
+        child: Center(
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min, // Wrap content vertically
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'assets/images/vr_golf_logo.png',
+                  width: screenWidth * 0.6,
+                ),
+                SizedBox(height: screenHeight * 0.03),
+                Text(
+                  "Ready to swing into VR golf action?",
+                  style: GoogleFonts.salsa(
+                    color: Colors.white,
+                    fontSize: screenWidth * 0.045,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: screenHeight * 0.05),
+                ElevatedButton.icon(
+                  key: const Key('googleSignInButton'),
+                  onPressed: () => _handleGoogleSignIn(context),
+                  icon: Image.asset(
+                    'assets/images/google_icon.png',
+                    width: 24,
+                    height: 24,
+                  ),
+                  label: const Text(
+                    "Sign in with Google",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFA4C5C0),
+                    foregroundColor: Colors.black,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: screenWidth * 0.08,
+                      vertical: screenHeight * 0.015,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(height: 50),
-            ElevatedButton.icon(
-              onPressed: () => _handleGoogleSignIn(context),
-              icon: Image.asset(
-                'assets/images/google_icon.png',
-                width: 24,
-                height: 24,
-              ),
-              label: const Text("Sign in with Google"),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                foregroundColor: Colors.black,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 40,
-                  vertical: 10,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                ),
-              ),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushReplacementNamed(context, '/deviceConnection');
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.teal.shade700,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 40,
-                  vertical: 10,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                ),
-              ),
-              child: const Text("Login as Guest"),
-            ),
-          ],
+          ),
         ),
       ),
     );

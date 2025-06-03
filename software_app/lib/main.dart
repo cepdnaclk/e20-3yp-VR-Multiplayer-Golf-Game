@@ -13,13 +13,9 @@ import 'Screens/help_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
-
- 
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -29,9 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'VR Golf Multiplayer',
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-      ),
+      theme: ThemeData(primarySwatch: Colors.teal),
       initialRoute: '/splash',
       routes: {
         '/splash': (context) => SplashScreen(),
@@ -40,7 +34,7 @@ class MyApp extends StatelessWidget {
         '/home': (context) => HomePage(),
         '/createRoom': (context) => CreateRoomPage(),
         '/joinRoom': (context) => JoinRoomPage(),
-        '/avatarSettings': (context) =>  AvatarSettingPage(),
+        '/avatarSettings': (context) => AvatarSettingPage(),
         '/gameSettings': (context) => GameSettingPage(),
         '/help': (context) => HelpPage(),
       },

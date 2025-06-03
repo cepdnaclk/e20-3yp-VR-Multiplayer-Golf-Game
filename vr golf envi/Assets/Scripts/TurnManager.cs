@@ -5,8 +5,6 @@ using UnityEngine;
 public class TurnManager : MonoBehaviourPunCallbacks
 {
     public static TurnManager Instance;
-
-    private PhotonView photonView;
     private int currentPlayerIndex = 0;
 
     private void Awake()
@@ -19,10 +17,10 @@ public class TurnManager : MonoBehaviourPunCallbacks
         }
         else
         {
-            Debug.LogWarning("Multiple TurnManager instances found!");
+            Debug.LogWarning("⚠️ Multiple TurnManager instances found! Destroying duplicate.");
+            Destroy(gameObject);
+            return;
         }
-
-        photonView = GetComponent<PhotonView>();
     }
 
     public void SwitchTurn()

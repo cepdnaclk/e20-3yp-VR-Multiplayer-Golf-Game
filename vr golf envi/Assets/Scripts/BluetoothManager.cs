@@ -13,7 +13,7 @@ public class BluetoothManager : MonoBehaviour
     void Start()
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
-        bluetoothPlugin = new AndroidJavaClass("com.vrgolfgame.bluetooth.BluetoothPlugin");
+        bluetoothPlugin = new AndroidJavaClass("comp.vrgolfgame.bluetooth.BluetoothPlugin");
         bluetoothPlugin.CallStatic("connectToESP32", "ESP32");
 #endif
     }

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\projects\e20-3yp-VR-Multiplayer-Golf-Game\build\CMakeFiles\4dd3f7c5cb3c64879159b2f3eb976e45\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5F2813B9-7A69-3406-A84F-1B9B919BFF4F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

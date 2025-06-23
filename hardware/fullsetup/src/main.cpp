@@ -37,20 +37,34 @@ void loop() {
   mpu.getEvent(&a, &g, &temp);
 
   for (int i = 0; i < 6; i++) {
-    buttonStates[i] = !digitalRead(buttonPins[i]);
+    buttonStates[i] = !digitalRead(buttonPins[i]); // Active LOW
   }
 
   String data = "Accel: ";
-  data += String(a.acceleration.x, 2) + ", ";
-  data += String(a.acceleration.y, 2) + ", ";
-  data += String(a.acceleration.z, 2) + " | Gyro: ";
-  data += String(g.gyro.x, 2) + ", ";
-  data += String(g.gyro.y, 2) + ", ";
-  data += String(g.gyro.z, 2) + " | Buttons: ";
+  if (buttonStates[5]) {  // If button 6 is pressed
+    data += String(a.acceleration.x, 2) + ", ";
+    data += String(a.acceleration.y, 2) + ", ";
+    data += String(a.acceleration.z, 2) + " | Gyro: ";
+    data += String(g.gyro.x, 2) + ", ";
+    data += String(g.gyro.y, 2) + ", ";
+    data += String(g.gyro.z, 2);
+  } else {
+    data += "0.00, 0.00, 0.00 | Gyro: 0.00, 0.00, 0.00";
+  }
 
+  data += " | Buttons: ";
+
+  bool anyPressed = false;
   for (int i = 0; i < 6; i++) {
-    data += buttonStates[i];
-    if (i < 5) data += ",";
+    if (buttonStates[i]) {
+      data += String(i + 1);
+      data += " ";
+      anyPressed = true;
+    }
+  }
+
+  if (!anyPressed) {
+    data += "None";
   }
 
   Serial.println(data);
@@ -58,3 +72,5 @@ void loop() {
 
   delay(200);
 }
+
+

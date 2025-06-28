@@ -1,0 +1,52 @@
+###
+# Unity folders and files
+###
+[Aa]ssets/AssetStoreTools*
+[Bb]uild/
+[Ll]ibrary/
+[Ll]ocal[Cc]ache/
+[Oo]bj/
+[Tt]emp/
+[Uu]nityGenerated/
+
+# Unity log files
+[Ll]ogs/
+
+
+# file on crash reports
+sysinfo.txt
+# Unity3D generated meta files
+
+*.DISABLED
+
+###
+# VS/MD solution and project files
+###
+[Ee]xportedObj/
+*.booproj
+*.csproj
+*.sln
+*.suo
+*.svd
+*.unityproj
+*.user
+*.userprefs
+*.pidb
+.DS_Store
+*.log
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+vr golf envi/Logs/shadercompiler-UnityShaderCompiler.exe-0.log
+vr golf envi/Logs/AssetImportWorker0.log
+vr golf envi/Logs/AssetImportWorker0.log
+vr golf envi/Logs/shadercompiler-UnityShaderCompiler.exe-0.log
+vr golf envi/Assets/Mirror/Examples/PlayerTest/PlayerTestScene/Lightmap-0_comp_dir.png.meta

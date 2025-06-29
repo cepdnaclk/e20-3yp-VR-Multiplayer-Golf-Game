@@ -20,9 +20,15 @@ MonoBehaviour:
     height: 764.8
   m_ShowMode: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Hierarchy
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 492}
+=======
+  m_Title: Console
+  m_RootView: {fileID: 2}
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
 =======
   m_Title: Console
   m_RootView: {fileID: 2}
@@ -38,6 +44,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
@@ -119,6 +126,8 @@ MonoBehaviour:
   m_Enabled: 1
 =======
 >>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
+=======
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
   m_EditorHideFlags: 1
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -162,6 +171,7 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,6 +201,9 @@ MonoBehaviour:
   controlID: 109
   draggingID: 0
 --- !u!114 &8
+=======
+--- !u!114 &4
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
 =======
 --- !u!114 &4
 >>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
@@ -234,6 +247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 0
     width: 349.6
     height: 714.8
@@ -242,6 +256,8 @@ MonoBehaviour:
   vertical: 1
   controlID: 17
 =======
+=======
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
     y: 30
     width: 1536
     height: 722.8
@@ -249,6 +265,9 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
   controlID: 145
+<<<<<<< HEAD
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
+=======
 >>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
   draggingID: 0
 --- !u!114 &6
@@ -271,6 +290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 189.6
     height: 345.6
@@ -310,6 +330,8 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &12
 =======
+=======
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
     width: 864
     height: 722.8
   m_MinSize: {x: 100, y: 150}
@@ -318,6 +340,9 @@ MonoBehaviour:
   controlID: 24
   draggingID: 0
 --- !u!114 &7
+<<<<<<< HEAD
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
+=======
 >>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,8 +361,13 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 349.6
     height: 366.4
+=======
+    width: 864
+    height: 76
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
 =======
     width: 864
     height: 76
@@ -495,17 +525,23 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 366.4
     width: 349.6
     height: 348.4
   m_MinSize: {x: 201, y: 221}
 =======
+=======
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
     x: 1225.6
     y: 0
     width: 310.40002
     height: 722.8
   m_MinSize: {x: 276, y: 71}
+<<<<<<< HEAD
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
+=======
 >>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
@@ -535,15 +571,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 540
     y: 80.8
     width: 234
     height: 693.8
 =======
+=======
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
     x: 0
     y: 555.2
     width: 863
     height: 220.19998
+<<<<<<< HEAD
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
+=======
 >>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -563,6 +605,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_EditorHideFlags: 0
   m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
@@ -954,6 +997,8 @@ MonoBehaviour:
   m_Enabled: 1
 =======
 >>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
+=======
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
   m_EditorHideFlags: 1
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -976,6 +1021,9 @@ MonoBehaviour:
     y: 73.6
     width: 863
     height: 55
+<<<<<<< HEAD
+>>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
+=======
 >>>>>>> d1202b4107ad1d6f0b59fd6e1f1ec2c19537f686
   m_SerializedDataModeController:
     m_DataMode: 0

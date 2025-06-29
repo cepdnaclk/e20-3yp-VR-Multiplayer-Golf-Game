@@ -4,19 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-<<<<<<< HEAD
-  - enabled: 1
-    path: Assets/Scenes/RoomTest.unity
-    guid: 16141cb28eb32db4fb6cb241f7db8daa
-=======
-  - enabled: 0
-    path: Assets/Scenes/MainGolfScene.unity
-    guid: 6b94405760731fd46bb2969db194fd5f
-  - enabled: 1
-    path: Assets/Scenes/MainGolfScene.unity
-    guid: 03c48c5e809944fa4afcae9973709f26
->>>>>>> 34248e6bb66fc907a4b399e5159b462f4ca24a94
-  m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e8bac800446e1b949a65f5c1d268ce6f, type: 2}
-    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: c6a22d16e93e034408389e430a16b63f, type: 2}
+  m_Scenes: []
+  m_configObjects: {}

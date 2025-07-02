@@ -8,11 +8,11 @@ Adafruit_MPU6050 mpu;
 WiFiUDP udp;
 
 // Wi-Fi credentials
-const char* ssid = "Methpura";
-const char* password = "123456789";
+const char* ssid = "Rashmika";
+const char* password = "rashmika1";
 
 // IP and port of the mobile device running Unity
-const char* udpAddress = "10.100.26.163"; // <-- Replace with your phone's IP
+const char* udpAddress = "192.168.208.69"; // <-- Replace with your phone's IP
 const int udpPort = 4210;
 
 int buttonPins[6] = {14, 27, 26, 25, 33, 32}; // Last one is B6

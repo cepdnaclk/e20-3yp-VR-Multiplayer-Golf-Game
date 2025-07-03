@@ -19,6 +19,8 @@
                     <li><a class="nav-link scrollto active" href="#home">Home</a></li>
                     <li><a class="nav-link scrollto" href="#intro">About</a></li>
                     <li><a class="nav-link scrollto" href="#implementation">Implementation</a></li>
+                    <li><a class="nav-link" href="#circuit">Circuit Diagram</a></li>
+                    <li><a class="nav-link" href="#connectivity">Device Connectivity</a></li>
                     <li><a class="nav-link scrollto" href="#budget">Budget</a></li>
                     <li><a class="nav-link scrollto" href="#team">Teams</a></li>
                     <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
@@ -78,15 +80,141 @@
               The <strong>VR Multiplayer Golf Game</strong> is implemented using a combination of modern tools and platforms:
             </p>
             <ul>
-              <li><strong>Unity:</strong> For developing the VR environment, physics, gameplay mechanics, and networked multiplayer experience.</li>
-              <li><strong>Flutter:</strong> Used to develop a companion mobile app for user profiles, device connectivity, and in-game controls.</li>
-              <li><strong>Firebase:</strong> Provides backend services including real-time database, cloud storage, and analytics.</li>
-              <li><strong>Google Authentication:</strong> Allows users to sign in securely using their Google accounts.</li>
+              <li><strong>Unity (2022.3.62f1):</strong> The core game engine used to develop the VR environment, implement realistic golf physics, manage gameplay mechanics, and enable networked multiplayer features. Unity handles all in-game logic, user interface, and real-time synchronization of player actions.</li>
+              <li><strong>Photon PUN & Photon Voice:</strong> Provides robust multiplayer networking and real-time voice chat. Photon PUN synchronizes game state, player positions, and interactions across devices, while Photon Voice enables secure, low-latency voice communication between players using AES-256 encryption.</li>
+              <li><strong>Google Sign-In (Firebase Auth or Unity Social APIs):</strong> Used for secure user authentication. Players log in with their Google accounts, and their profile images are displayed as custom avatars within the game.</li>
+              <li><strong>ESP32 Controllers:</strong> Custom-built golf stick and handwear controller use ESP32 microcontrollers to capture motion and button input. These devices communicate with the VR app via and Wi-Fi UDP, enabling real-time tracking and haptic feedback.</li>
+              <li><strong>Google Cardboard Plugin:</strong> Integrates mobile VR support, allowing the game to run on standard Android smartphones mounted in VR headsets.</li>
+              <li><strong>Programming Languages:</strong> C# for Unity scripts, C++ for ESP32 firmware, and Java for Unity native plugins.</li>
+              <li><strong>Platform:</strong> Android-based mobile VR devices (using standard VR boxes).</li>
+              <li><strong>Input APIs:</strong> Unity Input System processes motion data from the smartphone sensors and ESP32 devices, as well as button presses for in-game actions and menu navigation.</li>
+              <li><strong>Build System:</strong> Gradle and Unity Build Pipeline are used for compiling and deploying the application to Android devices.</li>
             </ul>
+            
           </div>
         </div>
     </section>
       
+
+    <section id="circuit">
+      <p class="topic">Circuit Diagram</p>
+      <div class="circuit-content">
+        <div class="circuit-description">
+          <p>
+            The VR Golf hardware stack is designed for reliability, low latency, and ease of integration with the VR system. The main components and their technical details are:
+            <ul>
+              <li>
+                <strong>ESP32 (30-pin):</strong> 
+                <ul>
+                  <li>Acts as the core microcontroller for sensor interfacing, input processing, and Wi-Fi communication.</li>
+                  <li><strong>Operating Voltage:</strong> 3.3V (logic), powered via two 3.7V Li-ion battery regulated down to 5V using Buck module.</li>
+                  <li><strong>Key Pins Used:</strong>
+                    <ul>
+                      <li><code>GPIO 21/22</code> - I2C communication with MPU6050 (SDA/SCL)</li>
+                      <li><code>GPIO 14/27/26/25/33/32</code> - Digital input from push buttons</li>
+                      <!-- <li><code>GPIO 25</code> - Output to drive the vibrator motor (via transistor)</li> -->
+                      <li><code>vin, GND</code> - Power supply</li>
+                    </ul>
+                  </li>
+                  <li>Supports both Wi-Fi (UDP) and Bluetooth (BLE) for communication with the Unity VR app.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>MPU6050 Gyroscope/Accelerometer:</strong>
+                <ul>
+                  <li>Used for 6-axis motion tracking (acceleration + rotation) in the golf stick and handwear controller.</li>
+                  <li><strong>Operating Voltage:</strong> 3.3V to 5V (connected to ESP32's 3.3V supply)</li>
+                  <li><strong>I2C Pins:</strong> SDA (to ESP32 GPIO 21), SCL (to ESP32 GPIO 22)</li>
+                  <li>Provides real-time orientation and swing data to the ESP32.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Push Buttons:</strong>
+                <ul>
+                  <li>Used for swing detection and menu navigation.</li>
+                  <li><strong>Operating Voltage:</strong> 3.3V logic (pulled up internally or externally)</li>
+                  <li><strong>Pin Connections:</strong> Connected to ESP32 GPIOs (e.g., GPIO 14, 27, 26, 25, 33, 32) with one side to GND.</li>
+                </ul>
+              </li>
+              <!-- <li>
+                <strong>Vibrator Motor:</strong>
+                <ul>
+                  <li>Provides haptic feedback for enhanced immersion (e.g., on ball impact).</li>
+                  <li><strong>Operating Voltage:</strong> 3V (powered via ESP32 through a transistor switch)</li>
+                  <li><strong>Pin Connection:</strong> Controlled by ESP32 GPIO 25 via NPN transistor (e.g., 2N2222 or S8050) for sufficient current drive.</li>
+                </ul>
+              </li> -->
+              <li>
+                <strong>Lithium-ion Battery (18650):</strong>
+                <ul>
+                  <li>Provides portable power for the entire hardware module.</li>
+                  <li><strong>Nominal Voltage:</strong> 3.7V</li>
+                  <li><strong>Voltage Regulation:</strong> Buck converter module steps down to 5V for ESP32 and peripherals.</li>
+                  <li>Includes a battery holder for safety and easy replacement.</li>
+                </ul>
+              </li>
+            </ul>
+            <strong>Integration Notes:</strong> All components are securely connected and managed by the ESP32, with careful PCB routing and enclosure design for durability, comfort, and safety during gameplay.
+          </p>
+          
+        </div>
+        <div class="circuit-image">
+          <!-- Top: Main Circuit Diagram -->
+          <div class="circuit-main-img">
+            <img src="images/circuit_diagram_vr_golf.png" alt="VR Golf Circuit Diagram">
+          </div>
+          <!-- Bottom: 2x2 Grid of Components -->
+          <div class="circuit-components-grid">
+            <div class="circuit-component">
+              <img src="images/esp32.png" alt="ESP32">
+              <span>ESP32</span>
+            </div>
+            <div class="circuit-component">
+              <img src="images/gyro.png" alt="MPU6050">
+              <span>MPU6050</span>
+            </div>
+            <div class="circuit-component">
+              <img src="images/buck.png" alt="Push Button">
+              <span>Buck Module</span>
+            </div>
+            <div class="circuit-component">
+              <img src="images/vibrator.png" alt="Vibrator Motor">
+              <span>Vibrator Motor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+
+
+
+    <section id="connectivity">
+      <p class="topic">Device Connectivity & Data Flow</p>
+      <div class="connectivity-content">
+        <div class="connectivity-diagram">
+          <img src="images/device_connection.png" alt="Device Connectivity Diagram">
+        </div>
+        <div class="connectivity-description">
+          <p>
+            <strong>System Communication:</strong>
+            <ul>
+              <li>Both the golf stick and handwear controller use <strong>ESP32</strong> modules to collect sensor and button data.</li>
+              <li>Data is transmitted via <strong>Wi-Fi UDP</strong> to the smartphone running the VR app.</li>
+              <li>The mobile app (built with Unity) processes the incoming data to update the virtual environment in real time.</li>
+              <li>Multiplayer synchronization, voice chat, and cloud storage are managed via <strong>Photon PUN/Voice</strong> and <strong>Firebase</strong>.</li>
+            </ul>
+            <strong>Connectivity Flow:</strong>
+            <ol>
+              <li>Player swings the golf stick; sensor and button data are read by the ESP32.</li>
+              <li>ESP32 transmits data over Wi-Fi UDP to the smartphone.</li>
+              <li>Unity app interprets the data for in-game actions and physics simulation.</li>
+              <li>Game state and player actions are synchronized across all players via Photon Cloud servers.</li>
+            </ol>
+          </p>
+        </div>
+      </div>
+    </section>
+    
 
     <section id="budget">
         <p class="topic">Budget</p>

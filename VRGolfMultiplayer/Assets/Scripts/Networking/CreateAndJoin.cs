@@ -23,7 +23,7 @@ public class CreateAndJoin : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel("MainGolfScene");
+        PhotonNetwork.LoadLevel("MainGolfScene 1");
         Debug.Log("Number of players in room: " + PhotonNetwork.CountOfPlayersInRooms);
     }
 }

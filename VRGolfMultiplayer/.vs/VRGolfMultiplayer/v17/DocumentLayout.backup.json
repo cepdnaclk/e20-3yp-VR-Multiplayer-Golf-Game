@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3EECE546-A8AD-3755-4EE3-F1EFEC26B6FD}|Assembly-CSharp.csproj|d:\\sem 6\\3yp-2024_1\\e20-3yp-vr-multiplayer-golf-game\\vrgolfmultiplayer\\assets\\scripts\\setupboundaries\\vrlookwalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EECE546-A8AD-3755-4EE3-F1EFEC26B6FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\setupboundaries\\vrlookwalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\Assets\\Scripts\\Setup_Boundaries\\VRLookWalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Setup_Boundaries\\VRLookWalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Shaders\\Terrain\\TerrainLit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Shaders\\Terrain\\TerrainLit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EECE546-A8AD-3755-4EE3-F1EFEC26B6FD}|Assembly-CSharp.csproj|d:\\sem 6\\3yp-2024_1\\e20-3yp-vr-multiplayer-golf-game\\vrgolfmultiplayer\\assets\\scripts\\setup_boundaries\\clamptoterrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EECE546-A8AD-3755-4EE3-F1EFEC26B6FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\setup_boundaries\\clamptoterrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\Assets\\Scripts\\Setup_Boundaries\\AreaLimiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Setup_Boundaries\\AreaLimiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EECE546-A8AD-3755-4EE3-F1EFEC26B6FD}|Assembly-CSharp.csproj|d:\\sem 6\\3yp-2024_1\\e20-3yp-vr-multiplayer-golf-game\\vrgolfmultiplayer\\assets\\scripts\\setup_boundaries\\vrlookwalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EECE546-A8AD-3755-4EE3-F1EFEC26B6FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\setup_boundaries\\vrlookwalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\sem 6\\3yp-2024_1\\e20-3yp-vr-multiplayer-golf-game\\vrgolfmultiplayer\\assets\\scripts\\setup_boundaries\\arealimiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\setup_boundaries\\arealimiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\Assets\\Scripts\\Setup_Boundaries\\ClampToTerrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Setup_Boundaries\\ClampToTerrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "VRLookWalk.cs",
+              "DocumentMoniker": "D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\Assets\\Scripts\\SetupBoundaries\\VRLookWalk.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SetupBoundaries\\VRLookWalk.cs",
+              "ToolTip": "D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\Assets\\Scripts\\SetupBoundaries\\VRLookWalk.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SetupBoundaries\\VRLookWalk.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwD4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T17:26:46.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TerrainLit.shader",
               "DocumentMoniker": "D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Shaders\\Terrain\\TerrainLit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Shaders\\Terrain\\TerrainLit.shader",
@@ -38,12 +55,11 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Shaders\\Terrain\\TerrainLit.shader",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-07-02T17:25:29.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T17:25:29.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ClampToTerrain.cs",
               "DocumentMoniker": "D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\Assets\\Scripts\\Setup_Boundaries\\ClampToTerrain.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Setup_Boundaries\\ClampToTerrain.cs",
@@ -51,21 +67,18 @@
               "RelativeToolTip": "Assets\\Scripts\\Setup_Boundaries\\ClampToTerrain.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T16:58:56.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T16:58:56.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "VRLookWalk.cs",
               "DocumentMoniker": "D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\Assets\\Scripts\\Setup_Boundaries\\VRLookWalk.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Setup_Boundaries\\VRLookWalk.cs",
               "ToolTip": "D:\\sem 6\\3yp-2024_1\\e20-3yp-VR-Multiplayer-Golf-Game\\VRGolfMultiplayer\\Assets\\Scripts\\Setup_Boundaries\\VRLookWalk.cs",
               "RelativeToolTip": "Assets\\Scripts\\Setup_Boundaries\\VRLookWalk.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAowD0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T15:33:58.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T15:33:58.885Z"
             },
             {
               "$type": "Document",

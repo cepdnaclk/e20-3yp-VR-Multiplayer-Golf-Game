@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/vr_golf_logo.png" rel="icon">
+    <title>VR-Multiplayer-Golf-Game</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <img src="images/vr_golf_logo.png" alt="VR Golf Logo">
+                </div>
+                <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#intro">About</a></li>
+                    <li><a class="nav-link scrollto" href="#implementation">Implementation</a></li>
+                    <li><a class="nav-link scrollto" href="#budget">Budget</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Teams</a></li>
+                    <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="images/vr_golf_logo.png" alt="VR Golf Logo" class="logo">
+        <h1>VR Multiplayer Golf Game</h1>
+        <p>Welcome to our VR multiplayer golf game project!</p>
+        <div class="youtube-container">
+            <a href="https://youtu.be/Lre_sJt9n2I" target="_blank" class="youtube-icon">
+            <span class="youtube-text">Intro Video</span>
+            <img src="images/youtube.png" alt="Watch Video" />
+          </a> 
+        </div>    
+    </section>
+
+    <section id="intro">
+        <p class="topic">About the Project</p>
+        <div class="intro-content">
+          <div class="intro-text">
+            <p>
+              The <strong>VR Multiplayer Golf Game</strong> is designed to bring people closer, even if they're miles apart. Whether friends or family members are working in different countries or living far from home, our game offers a fun and immersive way to reconnect. With realistic golf mechanics and social interaction in a virtual environment, users can enjoy quality leisure time and foster meaningful communication — contributing to a healthy, balanced lifestyle.
+            </p>
+            <p>
+              This is a <strong>hardware-based project</strong> that includes custom-built components such as a <strong>smart golf stick</strong> <strong>,VR head set</strong> and a <strong>wrist-worn sensor</strong>. These devices provide real-time motion tracking and haptic feedback, enhancing the realism and interactivity of the gameplay.
+            </p>
+            <p>
+               <a href="docs/user_manual.pdf" target="_blank" class="user-manual-link">View User Manual</a>
+            </p>
+          </div>
+          <div class="intro-image">
+            <img src="images/intro.png" alt="VR Golf Hardware">
+          </div>
+        </div>
+    </section>      
+
+    <section id="implementation">
+        <p class="topic">Implementation</p>
+        <div class="implementation-content">
+          <!-- 🔹 Left: Image Grid -->
+          <div class="implementation-images">
+            <img src="images/development_process/Game_Dev/Two_Instance_Login.png" alt="Step 1">
+            <img src="images/development_process/Game_Dev/VR_Simulation.png" alt="Step 2">
+            <img src="images/development_process/Game_Dev/WhatsApp Image 2025-06-04 at 02.14.04_8961654b.jpg" alt="Step 3">
+            <img src="images/development_process/Game_Dev/WhatsApp Image 2025-06-04 at 02.14.04_e3212805.jpg" alt="Step 4">
+            <img src="images/development_process/Game_Dev/Two_Instance_Login.png" alt="Step 5">
+            <img src="images/development_process/Game_Dev/VR_Simulation.png" alt="Step 6">
+          </div>
+      
+          <!-- 🔹 Right: Description -->
+          <div class="implementation-text">
+            <p>
+              The <strong>VR Multiplayer Golf Game</strong> is implemented using a combination of modern tools and platforms:
+            </p>
+            <ul>
+              <li><strong>Unity:</strong> For developing the VR environment, physics, gameplay mechanics, and networked multiplayer experience.</li>
+              <li><strong>Flutter:</strong> Used to develop a companion mobile app for user profiles, device connectivity, and in-game controls.</li>
+              <li><strong>Firebase:</strong> Provides backend services including real-time database, cloud storage, and analytics.</li>
+              <li><strong>Google Authentication:</strong> Allows users to sign in securely using their Google accounts.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+      
+
+    <section id="budget">
+        <p class="topic">Budget</p>
+        <div class="budget-container">
+          <table class="budget-table">
+            <thead>
+              <tr>
+                <th>Item Name</th>
+                <th>Unit Price (LKR)</th>
+                <th>Quantity</th>
+                <th>Price (LKR)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ESP32</td>
+                <td>1,690</td>
+                <td>2</td>
+                <td>3,380</td>
+              </tr>
+              <tr>
+                <td>Adjustable Buck Module</td>
+                <td>430</td>
+                <td>2</td>
+                <td>860</td>
+              </tr>
+              <tr>
+                <td>Push Buttons</td>
+                <td>40</td>
+                <td>12</td>
+                <td>480</td>
+              </tr>
+              <tr>
+                <td>Vibrator</td>
+                <td>120</td>
+                <td>2</td>
+                <td>240</td>
+              </tr>
+              <tr>
+                <td>MPu 6050</td>
+                <td>740</td>
+                <td>2</td>
+                <td>1480</td>
+              </tr>
+              <tr>
+                <td>18650 Battery</td>
+                <td>470</td>
+                <td>4</td>
+                <td>1,880</td>
+              </tr>
+              <tr>
+                <td>Battery Holder</td>
+                <td>100</td>
+                <td>2</td>
+                <td>200</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th colspan="3">Total</th>
+                <th>7,220</th>
+              </tr>
+            </tfoot>
+          </table>
+      
+          <p class="purchase-link">
+            🔗 Purchased from: <a href="https://www.duino.lk" target="_blank">duino.lk</a>
+          </p>
+        </div>
+    </section>
+      
+
+    <section id="team">
+        <p class="topic">Team Members</p>
+
+        <div class="team-container">
+          <div class="team-member">
+            <img src="images/Members/methpura.jpg" alt="John Doe">
+            <h3>Kavindu Methpura</h3>
+            <!-- <p>Hardware de</p> -->
+          </div>
+          <div class="team-member">
+            <img src="images/Members/binuri.png" alt="Jane Smith">
+            <h3>Binuri Senavirathna</h3>
+          </div>
+          <div class="team-member">
+            <img src="images/Members/rashmika.jpeg" alt="Emily Johnson">
+            <h3>Rashmika Sewmini</h3>
+          </div>
+          <div class="team-member">
+            <img src="images/Members/janith.jpg" alt="Michael Brown">
+            <h3>Janith Wanasinghe</h3>
+          </div>
+        </div>
+    </section>
+      
+    <section id="gallery">
+        <p class="topic">Gallery</p>
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <img src="images/gallery/1.jpg" alt="Gallery Image 1">
+                <img src="images/gallery/2.jpg" alt="Gallery Image 2">
+                <img src="images/gallery/3.jpg" alt="Gallery Image 3">
+                <img src="images/gallery/4.jpg" alt="Gallery Image 4">
+                <img src="images/gallery/5.jpg" alt="Gallery Image 5">
+                <img src="images/gallery/6.jpg" alt="Gallery Image 6">
+                <img src="images/gallery/1.jpg" alt="Gallery Image 7">
+                <img src="images/gallery/2.jpg" alt="Gallery Image 8">
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 VR Multiplayer Golf Game. All rights reserved.</p>
+        <p>Contact us at: <a href="#">vrgolf@gmail.com</a></p>
+        <p>Follow us on social media: 
+            <a href="#">Twitter</a>, 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+    "title": "VR Multiplayer Golf Game",
+    "team": [
+        {
+            "name": "Kavindu Methpura",
+            "email": "e20254@eng.pdn.ac.lk",
+            "eNumber": "E/20/254"
+        },
+        {
+            "name": "Binuri Senavirathna",
+            "email": "e20367@eng.pdn.ac.lk",
+            "eNumber": "E/20/367"
+        },
+        {
+            "name": "Rashmika Sewmini",
+            "email": "e20370@eng.pdn.ac.lk",
+            "eNumber": "E/20/370"
+        },
+        {
+            "name": "Janith Wanasinghe",
+            "email": "e20420@eng.pdn.ac.lk",
+            "eNumber": "E/20/420"
+        }
+    ],
+    "supervisors": [
+        {
+            "name": "Dr. Isuru Nawinne",
+            "email": "isurunawinne@eng.pdn.ac.lk"
+        }
+    ]
+}

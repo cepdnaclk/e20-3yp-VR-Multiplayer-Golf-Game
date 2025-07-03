@@ -1,57 +1,125 @@
-___
-# DELETE THIS INSTRUCTIONS AND ADD AN INTRODUCTION ABOUT YOUR PROJECT
-___
+# VR Multiplayer Golf Game
 
-# eYY-3yp-project-template
+![VR Multiplayer Golf Game Logo](docs/images/vr_golf_logo.png)
 
-This is a sample repository you can use for your Embedded Systems project. Once you followed these instructions, remove the text and add a brief introduction to here.
+## Overview
 
-### Enable GitHub Pages
+The **VR Multiplayer Golf Game** is an immersive virtual reality experience that combines physical hardware with a mobile VR environment, enabling players to swing a real-world golf stick and interact with a wearable controller for enhanced realism. Designed for Android smartphones and compatible with standard VR headsets (Google Cardboard), this project allows two players to connect, communicate, and compete on stunning virtual golf courses—no matter where they are in the world.
 
-You can put the things to be shown in GitHub pages into the _docs/_ folder. Both html and md file formats are supported. You need to go to settings and enable GitHub pages and select _main_ branch and _docs_ folder from the dropdowns, as shown in the below image.
 
-![image](https://user-images.githubusercontent.com/11540782/98789936-028d3600-2429-11eb-84be-aaba665fdc75.png)
+## Table of Contents
 
-### Special Configurations
+- [Features](#features)
+- [System Architecture](#system-architecture)
+- [Hardware Stack](#hardware-stack)
+- [Device Connectivity](#device-connectivity)
+- [Technologies Used](#technologies-used)
+- [How to Play](#how-to-play)
+- [Team](#team)
 
-These projects will be automatically added into [https://projects.ce.pdn.ac.lk](). If you like to show more details about your project on this site, you can fill the parameters in the file, _/docs/index.json_
+---
 
-```
-{
-  "title": "This is the title of the project",
-  "team": [
-    {
-      "name": "Team Member Name 1",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    },
-    {
-      "name": "Team Member Name 2",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    },
-    {
-      "name": "Team Member Name 3",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    }
-  ],
-  "supervisors": [
-    {
-      "name": "Dr. Supervisor 1",
-      "email": "email@eng.pdn.ac.lk"
-    },
-    {
-      "name": "Supervisor 2",
-      "email": "email@eng.pdn.ac.lk"
-    }
-  ],
-  "tags": ["Web", "Embedded Systems"]
-}
-```
+## Features
 
-Once you filled this _index.json_ file, please verify the syntax is correct. (You can use [this](https://jsonlint.com/) tool).
+- **Real-time Multiplayer:** Play against friends in a synchronized VR environment.
+- **Physical Interaction:** Use a custom-built golf stick and handwear controller for realistic swing and motion tracking.
+- **Voice Chat:** Communicate live with your opponent using secure, low-latency voice chat.
+- **Google Authentication:** Sign in easily and use your Google profile picture as your in-game avatar.
+- **Custom Avatars:** Display your Google profile image in the game.
+- **Session Statistics:** Track shots, scores, and game progress in real time.
+- **Haptic Feedback:** Feel every swing and impact through vibration motors in the hardware.
+- **Cross-Platform Play:** Works on any Android phone with VR headset support.
 
-### Page Theme
+---
 
-A custom theme integrated with this GitHub Page, which is based on [github.com/cepdnaclk/eYY-project-theme](https://github.com/cepdnaclk/eYY-project-theme). If you like to remove this default theme, you can remove the file, _docs/\_config.yml_ and use HTML based website.
+## System Architecture
+
+![High-Level Architecture](docs/images/device_connection.png)
+
+The system consists of:
+- **Client Devices:** Android smartphones running the Unity VR app, mounted in VR headsets.
+- **Physical Controllers:** ESP32-powered golf stick and handwear controller, each with sensors and buttons.
+- **Networking:** Photon Cloud for multiplayer synchronization and voice chat.
+- **Authentication:** Google Sign-In for secure login and custom avatars.
+
+### Data Flow
+
+1. **Input:** User swings golf stick or presses a button; ESP32 reads sensor data.
+2. **Transmission:** ESP32 sends data via Wi-Fi UDP to the smartphone.
+3. **Processing:** Unity app interprets the data, updates the VR environment, and synchronizes actions with the Photon Cloud.
+4. **Feedback:** Haptic motors provide physical feedback, and voice chat enables real-time communication.
+
+---
+
+## Hardware Stack
+
+| Component         | Description                                                 | Image                                      |
+|-------------------|------------------------------------------------------------|--------------------------------------------|
+| ESP32 (30-pin)    | Core controller, Wi-Fi/BLE, sensor interfacing             | ![ESP32](docs/images/esp32.png)      |
+| Push Button       | Triggers swing/menu actions                                | ![Button](docs/images/button.png)     |
+| Vibrator Motor    | Haptic feedback on swing/impact                            | ![Vibrator](docs/images/vibrator.png) |
+| Li-ion Battery    | 3.7V rechargeable, powers the stick                        | ![Battery](docs/images/battery.png)   |
+| Buck Module   | step down 3.7x2 = 7.4 to 5v                        | ![Battery](docs/images/buck.png)   |
+
+
+#### Circuit Diagram
+
+![Circuit Diagram](docs/images/circuit_diagram_vr_golf.png)
+
+---
+
+## Device Connectivity
+
+- **ESP32 controllers** in both the golf stick and handwear module collect sensor/button data.
+- Data is transmitted via **Wi-Fi UDP** to the smartphone running the Unity VR app.
+- The app processes this data for real-time gameplay and synchronizes player actions using **Photon PUN** and **Photon Voice**.
+- **Bluetooth Low Energy (BLE)** is also used for some sensor data transmission.
+
+---
+
+## Technologies Used
+
+| Layer                  | Technology/Tool                                   |
+|------------------------|--------------------------------------------------|
+| Game Engine            | Unity 2022.3.62f1                                |
+| Networking             | Photon PUN & Photon Voice                        |
+| Authentication         | Google Sign-In (Firebase Auth/Unity Social APIs) |
+| VR Implementation      | Google Cardboard Plugin                          |
+| Controller             | ESP32, BLE (Bluetooth Low Energy)                |
+| Programming Languages  | C# (Unity), C++ (ESP32), Java (Unity Plugins)    |
+| Platform               | Android VR Devices                               |
+| Input APIs             | Unity Input System                               |
+| Build System           | Gradle / Unity Build Pipeline                    |
+| Communication          | BLE, Wi-Fi UDP, Photon Cloud                     |
+| Voice Chat             | Photon Voice (AES-256 encryption)                |
+
+---
+
+## How to Play
+
+1. **Install** the game on your Android phone.
+2. **Login** using your Google account.
+3. **Connect** the ESP32-based golf stick and handwear controller via Bluetooth/Wi-Fi.
+4. **Start a Session:** The admin user creates a session and shares the code with the other player.
+5. **Join:** The second player enters the code to join the game.
+6. **Mount** your phone in a VR headset (Google Cardboard or similar).
+7. **Play:** Swing the golf stick and use the handwear controller to interact with the VR world. Take turns, communicate via voice chat, and compete to win!
+
+---
+
+## Team
+
+- **Kavindu Methpura**
+- **Binuri Senavirathna**
+- **Rashmika Sewmini**
+- **Janith Wanasinghe**
+
+---
+
+## Summary
+
+The VR Multiplayer Golf Game provides a unique, realistic, and social VR sports experience by blending custom hardware with advanced mobile VR technology. With real-time multiplayer, voice chat, and physical feedback, it brings the excitement of golf to the virtual world—anywhere, anytime.
+
+---
+
+*For more details, see the [Comprehensive Documentation PDF](docs/docs/user_manual.pdf).*

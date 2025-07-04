@@ -73,7 +73,7 @@ The system consists of:
 - **ESP32 controllers** in both the golf stick and handwear module collect sensor/button data.
 - Data is transmitted via **Wi-Fi UDP** to the smartphone running the Unity VR app.
 - The app processes this data for real-time gameplay and synchronizes player actions using **Photon PUN** and **Photon Voice**.
-- **Bluetooth Low Energy (BLE)** is also used for some sensor data transmission.
+- **WiFi** is also used for some sensor data transmission.
 
 ---
 
@@ -85,7 +85,7 @@ The system consists of:
 | Networking             | Photon PUN & Photon Voice                        |
 | Authentication         | Google Sign-In (Firebase Auth/Unity Social APIs) |
 | VR Implementation      | Google Cardboard Plugin                          |
-| Controller             | ESP32, BLE (Bluetooth Low Energy)                |
+| Controller             | ESP32, WiFi                                      |
 | Programming Languages  | C# (Unity), C++ (ESP32), Java (Unity Plugins)    |
 | Platform               | Android VR Devices                               |
 | Input APIs             | Unity Input System                               |
@@ -99,7 +99,7 @@ The system consists of:
 
 1. **Install** the game on your Android phone.
 2. **Login** using your Google account.
-3. **Connect** the ESP32-based golf stick and handwear controller via Bluetooth/Wi-Fi.
+3. **Connect** the ESP32-based golf stick and handwear controller via Wi-Fi.
 4. **Start a Session:** The admin user creates a session and shares the code with the other player.
 5. **Join:** The second player enters the code to join the game.
 6. **Mount** your phone in a VR headset (Google Cardboard or similar).

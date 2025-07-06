@@ -42,12 +42,14 @@ void loop() {
   bool b6 = digitalRead(buttonPins[5]) == LOW;
 
   String data;
+  sensors_event_t a, g, temp;
+  mpu.getEvent(&a, &g, &temp);
+
   if (b6) {
-    sensors_event_t a, g, temp;
-    mpu.getEvent(&a, &g, &temp);
-    data = String(g.gyro.x, 2) + "," + String(g.gyro.y, 2) + "," + String(g.gyro.z, 2);
+    data = String(a.acceleration.x, 2) + "," + String(a.acceleration.y, 2) + "," + String(a.acceleration.z, 2) + ",";
+    data += String(g.gyro.x, 2) + "," + String(g.gyro.y, 2) + "," + String(g.gyro.z, 2);
   } else {
-    data = "0,0,0";
+    data = "0,0,0,0,0,0";
   }
 
   for (int i = 0; i < 6; i++) {

@@ -9,7 +9,7 @@ WiFiUDP udp;
 
 // Wi-Fi credentials
 const char* ssid = "Rashmika";
-const char* password = "rashmika1";
+const char* password = "rashmika";
 
 // IP and port of the mobile device running Unity
 const char* udpAddress = "192.168.208.69"; // <-- Replace with your phone's IP
@@ -55,16 +55,19 @@ void loop() {
 
   String data;
 
-  // Handle gyro data
+  // Read sensor data
+  sensors_event_t a, g, temp;
+  mpu.getEvent(&a, &g, &temp);
+
+  // Only send real gyro data if B6 is pressed, otherwise send zeros
   if (b6Pressed) {
-    sensors_event_t a, g, temp;
-    mpu.getEvent(&a, &g, &temp);
-    data = String(g.gyro.x, 2) + "," + String(g.gyro.y, 2) + "," + String(g.gyro.z, 2);
+    data = String(a.acceleration.x, 2) + "," + String(a.acceleration.y, 2) + "," + String(a.acceleration.z, 2) + ",";
+    data += String(g.gyro.x, 2) + "," + String(g.gyro.y, 2) + "," + String(g.gyro.z, 2);
   } else {
-    data = "0,0,0"; // Gyro is zeroed
+    data = "0,0,0,0,0,0"; // Zeroed acceleration and gyro
   }
 
-  // Handle button states: convert LOW to 1 (pressed), HIGH to 0 (not pressed)
+  // Append button states
   for (int i = 0; i < 6; i++) {
     int state = digitalRead(buttonPins[i]) == LOW ? 1 : 0;
     data += "," + String(state);
@@ -75,6 +78,6 @@ void loop() {
   udp.print(data);
   udp.endPacket();
 
-  Serial.println(data); // Debug
+  Serial.println(data); // Debug print
   delay(30); // ~33Hz
 }

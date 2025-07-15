@@ -19,8 +19,8 @@ We used Unity Version Control for managing the project's source code and collabo
 - [Hardware Stack](#hardware-stack)
 - [Device Connectivity](#device-connectivity)
 - [Technologies Used](#technologies-used)
+- [Requirement_for_installation](#Requirement_for_installation)
 - [How to Play](#how-to-play)
-- [How to Work](#how-to-work)
 - [Link](#Link)
 - [Testing](#Testing)
 - [Team](#team)
@@ -103,6 +103,12 @@ The system consists of:
 | Voice Chat             | Photon Voice (AES-256 encryption)                |
 
 ---
+## Requirement for installation
+1. General Requirements - VR Golf Application ,Internet Connection, mobile VR Headset or cardboard vr box.
+2. Mobile Phone Requirements - Storage (At least 50 MB free for the app) , Compatible for vr rotation/ mobile's gyrosensor
+3. Gaming Kit - golf club stick,Hand Band.
+
+---
 
 ## How to Play
 
@@ -116,14 +122,14 @@ The system consists of:
 
 ---
 ## Testing
-Unit Testing : Test individual modules(sensor readings, Web socket handlers, Ui Components,
-Integration Testing: Test communication between ESP32 ↔ Unity Game (use demo scenes) .
-System Testing: Test the game as a whole in VR with real-time interaction.
-Usability Testing: Evaluate user experience with real players.
+- Unit Testing : Test individual modules(sensor readings, Web socket handlers, Ui Components,
+- Integration Testing: Test communication between ESP32 ↔ Unity Game (use demo scenes) .
+- System Testing: Test the game as a whole in VR with real-time interaction.
+- Usability Testing: Evaluate user experience with real players.
 ---
 ## Link
-https://github.com/cepdnaclk/e20-3yp-VR-Multiplayer-Golf-Game
-https://projects.ce.pdn.ac.lk/
+- https://github.com/cepdnaclk/e20-3yp-VR-Multiplayer-Golf-Game
+- https://projects.ce.pdn.ac.lk/
 
 ---
 

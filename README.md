@@ -19,7 +19,7 @@ We used Unity Version Control for managing the project's source code and collabo
 - [Hardware Stack](#hardware-stack)
 - [Device Connectivity](#device-connectivity)
 - [Technologies Used](#technologies-used)
-- [Requirement_for_installation](#requirement_for_installation)
+- [Requirement_for_installation](#requirement-for-installation)
 - [How to Play](#how-to-play)
 - [Link](#Link)
 - [Testing](#Testing)

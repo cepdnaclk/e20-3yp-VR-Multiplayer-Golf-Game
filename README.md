@@ -17,6 +17,7 @@ We used Unity Version Control for managing the project's source code and collabo
 - [Features](#features)
 - [System Architecture](#system-architecture)
 - [Hardware Stack](#hardware-stack)
+- [Game_Design](#game-design)
 - [Device Connectivity](#device-connectivity)
 - [Technologies Used](#technologies-used)
 - [Requirement_for_installation](#requirement-for-installation)
@@ -89,10 +90,18 @@ The system consists of:
     -  User registration (email & password), Login/logout functionality.
 3. UDP Communication
    - ESP32 reads motion data from the MPU6050 sensor and it connects to a Wi-Fi network and sends the data via UDP packets.
+  
+---
   #### Game Design
 
-![game-design](docs/images/game-design1.png)
-![game-design](docs/images/game-design2.png)
+![Game-Design](docs/images/game_design1.png)
+
+![Game-Design](docs/images/game_design2.png)
+
+![Game-Design](docs/images/game_design3.png)
+
+![Game-Design](docs/images/game_design4.png)
+
 ---
 ## Device Connectivity
 

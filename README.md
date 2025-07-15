@@ -82,7 +82,18 @@ The system consists of:
 ![3D-model](docs/images/3d_model.png)
 
 ---
+## Software Design
+1. Unity Game Development
+   - Tool Used: Unity Hub with Unity Editor v2022.3.62f1, C# languaage, Modular, scene-based,Photon PUN, Photon Voice, assets.
+2.  Firebase Authentication
+    -  User registration (email & password), Login/logout functionality.
+3. UDP Communication
+   - ESP32 reads motion data from the MPU6050 sensor and it connects to a Wi-Fi network and sends the data via UDP packets.
+  #### Game Design
 
+![game-design](docs/images/game-design1.png)
+![game-design](docs/images/game-design2.png)
+---
 ## Device Connectivity
 
 - **ESP32 controllers** in both the golf stick and handwear module collect sensor/button data.
@@ -128,7 +139,7 @@ The system consists of:
 
 ---
 ## Testing
-- Unit Testing : Test individual modules(sensor readings, Web socket handlers, Ui Components,
+- Unit Testing : Test individual modules(sensor readings, UDP socket handlers, Ui Components,
 - Integration Testing: Test communication between ESP32 ↔ Unity Game (use demo scenes) .
 - System Testing: Test the game as a whole in VR with real-time interaction.
 - Usability Testing: Evaluate user experience with real players.

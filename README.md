@@ -116,11 +116,14 @@ The system consists of:
 
 ---
 ## Testing
-
+Unit Testing : Test individual modules(sensor readings, Web socket handlers, Ui Components,
+Integration Testing: Test communication between ESP32 ↔ Unity Game (use demo scenes) .
+System Testing: Test the game as a whole in VR with real-time interaction.
+Usability Testing: Evaluate user experience with real players.
 ---
 ## Link
 https://github.com/cepdnaclk/e20-3yp-VR-Multiplayer-Golf-Game
-
+https://projects.ce.pdn.ac.lk/
 
 ---
 
@@ -132,6 +135,13 @@ https://github.com/cepdnaclk/e20-3yp-VR-Multiplayer-Golf-Game
 - **Janith Wanasinghe**
 
 ---
+
+## Contact
+For questions or feedback, contact: 
+- e20254@eng.pdn.ac.lk
+- e20367@eng.pdn.ac.lk
+- e20370@eng.pdn.ac.lk
+- e20420@eng.pdn.ac.lk
 
 ## Summary
 

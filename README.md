@@ -50,9 +50,10 @@ The system consists of:
 - **Networking:** Photon Cloud for multiplayer synchronization and voice chat.
 - **Authentication:** Google Sign-In for secure login and custom avatars.
 
-### Data Flow
+## Data Flow
 
-![High-Level Architecture](docs/images/data_flow.png)
+![Data-flow](docs/images/data_flow.png)
+
 1. **Input:** User swings golf stick or presses a button; ESP32 reads sensor data.
 2. **Transmission:** ESP32 sends data via Wi-Fi UDP to the smartphone.
 3. **Processing:** Unity app interprets the data, updates the VR environment, and synchronizes actions with the Photon Cloud.
@@ -74,6 +75,11 @@ The system consists of:
 #### Circuit Diagram
 
 ![Circuit Diagram](docs/images/circuit_diagram_vr_golf.png)
+
+---
+#### 3D model
+
+![3D-model](docs/images/3d_model.png)
 
 ---
 

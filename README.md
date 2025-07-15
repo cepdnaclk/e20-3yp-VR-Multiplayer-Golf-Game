@@ -8,7 +8,7 @@
 
 The **VR Multiplayer Golf Game** is an immersive virtual reality experience that combines physical hardware with a mobile VR environment, enabling players to swing a real-world golf stick and interact with a wearable controller for enhanced realism. Designed for Android smartphones and compatible with standard VR headsets (Google Cardboard), this project allows two players to connect, communicate, and compete on stunning virtual golf courses—no matter where they are in the world.
 
-##Version Control & Collaboration
+## Version Control & Collaboration
 We used Unity Version Control for managing the project's source code and collaboration between team members.
 
 

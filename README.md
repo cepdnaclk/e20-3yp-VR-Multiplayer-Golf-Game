@@ -21,6 +21,8 @@ We used Unity Version Control for managing the project's source code and collabo
 - [Technologies Used](#technologies-used)
 - [How to Play](#how-to-play)
 - [How to Work](#how-to-work)
+- [Link](#Link)
+- [Testing](#Testing)
 - [Team](#team)
 
 ---
@@ -111,6 +113,14 @@ The system consists of:
 5. **Join:** The second player enters the code to join the game.
 6. **Mount** your phone in a VR headset (Google Cardboard or similar).
 7. **Play:** Swing the golf stick and use the handwear controller to interact with the VR world. Take turns, communicate via voice chat, and compete to win!
+
+---
+## Testing
+
+---
+## Link
+https://github.com/cepdnaclk/e20-3yp-VR-Multiplayer-Golf-Game
+
 
 ---
 

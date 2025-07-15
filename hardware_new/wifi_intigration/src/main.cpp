@@ -8,8 +8,8 @@
 // WiFiUDP udp;
 
 // // Wi-Fi credentials
-// const char* ssid = "Methpura";
-// const char* password = "hj85kt22827";
+// const char* ssid = "";
+// const char* password = "";
 
 // // IP and port of the mobile device running Unity
 // const char* udpAddress = "192.168.8.186"; // <-- Replace with your phone's IP
@@ -100,8 +100,8 @@
 // WiFiUDP udp;
 
 // // Wi-Fi credentials
-// const char* ssid = "MethpuraKP";
-// const char* password = "123456789";
+// const char* ssid = "";
+// const char* password = "";
 
 // // Static IP configuration
 // IPAddress local_IP(192, 168, 108, 222);  // <-- Set a fixed IP
@@ -202,8 +202,8 @@ Adafruit_MPU6050 mpu;
 WiFiUDP udp;
 
 // Wi-Fi credentials
-const char* ssid = "Methpura";
-const char* password = "hj85kt22827";
+const char* ssid = "";
+const char* password = "";
 
 // IP and port of the mobile device running Unity
 const char* udpAddress = "192.168.8.186"; // <-- Replace with your Unity device IP
@@ -327,3 +327,5 @@ void loop() {
   Serial.println(data); // Optional debug output
   delay(30); // ~33 Hz
 }
+
+

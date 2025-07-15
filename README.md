@@ -19,7 +19,7 @@ We used Unity Version Control for managing the project's source code and collabo
 - [Hardware Stack](#hardware-stack)
 - [Device Connectivity](#device-connectivity)
 - [Technologies Used](#technologies-used)
-- [Requirement_for_installation](#Requirement_for_installation)
+- [Requirement_for_installation](#requirement_for_installation)
 - [How to Play](#how-to-play)
 - [Link](#Link)
 - [Testing](#Testing)
@@ -148,7 +148,7 @@ For questions or feedback, contact:
 - e20367@eng.pdn.ac.lk
 - e20370@eng.pdn.ac.lk
 - e20420@eng.pdn.ac.lk
-
+---
 ## Summary
 
 The VR Multiplayer Golf Game provides a unique, realistic, and social VR sports experience by blending custom hardware with advanced mobile VR technology. With real-time multiplayer, voice chat, and physical feedback, it brings the excitement of golf to the virtual world—anywhere, anytime.

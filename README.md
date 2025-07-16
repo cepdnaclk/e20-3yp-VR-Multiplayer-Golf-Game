@@ -138,7 +138,7 @@ The system consists of:
 ## How to Play
 
 1. **Install** the game on your Android phone.
-2. **Login** using your Google account.
+2. **Login** using your Email and Password.
 3. **Connect** the ESP32-based golf stick and handwear controller via Wi-Fi.
 4. **Start a Session:** The admin user creates a session and shares the code with the other player.
 5. **Join:** The second player enters the code to join the game.

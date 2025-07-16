@@ -1,343 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="images/vr_golf_logo.png" rel="icon">
-    <title>VR-Multiplayer-Golf-Game</title>
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link href="./assets/img/vr_golf_logo.png" rel="icon">
+  <title>SkySwing</title>
+  
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="logo">
-                    <img src="images/vr_golf_logo.png" alt="VR Golf Logo">
-                </div>
-                <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-                <ul class="nav-links" id="nav-links">
-                    <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#intro">About</a></li>
-                    <li><a class="nav-link scrollto" href="#implementation">Implementation</a></li>
-                    <li><a class="nav-link" href="#circuit">Circuit Diagram</a></li>
-                    <li><a class="nav-link" href="#connectivity">Device Connectivity</a></li>
-                    <li><a class="nav-link scrollto" href="#budget">Budget</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Teams</a></li>
-                    <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="me-auto" style="color: white;">SkySwing</h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+          <li><a class="nav-link scrollto" href="#intro">About</a></li>
+          <li><a class="nav-link scrollto" href="#features">Features</a></li>
+          <li><a class="nav-link scrollto" href="#implementation">Implementation</a></li>
+          <li><a class="nav-link scrollto" href="#budget">Budget</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
 
-    <section id="home">
-        <img src="images/vr_golf_logo.png" alt="VR Golf Logo" class="logo">
-        <h1>VR Multiplayer Golf Game</h1>
-        <p>Welcome to our VR multiplayer golf game project!</p>
-        <div class="youtube-container">
-            <a href="https://youtu.be/Lre_sJt9n2I" target="_blank" class="youtube-icon">
-            <span class="youtube-text">Intro Video</span>
-            <img src="images/youtube.png" alt="Watch Video" />
-          </a> 
-        </div>    
-    </section>
+  <section id="home" class="d-flex align-items-center">
+      <video autoplay muted loop playsinline class="bg-video">
+    <source src="assets/img/bground1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" >
+          <h1 data-aos="fade-up">Golf Like Never Before</h1>
+          <h2 data-aos="fade-up">The Course is Yours - Anytime, Anywhere.</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-delay="400">
+            <a href="#about" class="btn-get-started scrollto" >Explore</a>
+            <a href="https://youtu.be/GBbo8fPUusI" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 home-img" >
+          <img src="./assets/img/logo.png" class="img-fluid" alt="" data-aos="fade-up">
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <main id="main">
+    
     <section id="intro">
-        <p class="topic">About the Project</p>
-        <div class="intro-content">
-          <div class="intro-text">
-            <p>
-              The <strong>VR Multiplayer Golf Game</strong> is designed to bring people closer, even if they're miles apart. Whether friends or family members are working in different countries or living far from home, our game offers a fun and immersive way to reconnect. With realistic golf mechanics and social interaction in a virtual environment, users can enjoy quality leisure time and foster meaningful communication — contributing to a healthy, balanced lifestyle.
-            </p>
-            <p>
-              This is a <strong>hardware-based project</strong> that includes custom-built components such as a <strong>smart golf stick</strong> <strong>,VR head set</strong> and a <strong>wrist-worn sensor</strong>. These devices provide real-time motion tracking and haptic feedback, enhancing the realism and interactivity of the gameplay.
-            </p>
-            <p>
-               <a href="docs/user_manual.pdf" target="_blank" class="user-manual-link">View User Manual</a>
-            </p>
+      <section id="about" class="about"> 
+        <div class="container">
+          <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+            <h2>About</h2>
           </div>
-          <div class="intro-image">
-            <img src="images/intro.png" alt="VR Golf Hardware">
-          </div>
-        </div>
-    </section>      
-
-    <section id="implementation">
-        <p class="topic">Implementation</p>
-        <div class="implementation-content">
-          <!-- 🔹 Left: Image Grid -->
-          <div class="implementation-images">
-            <img src="images/development_process/Game_Dev/Two_Instance_Login.png" alt="Step 1">
-            <img src="images/development_process/Game_Dev/VR_Simulation.png" alt="Step 2">
-            <img src="images/development_process/Game_Dev/WhatsApp Image 2025-06-04 at 02.14.04_8961654b.jpg" alt="Step 3">
-            <img src="images/development_process/Game_Dev/WhatsApp Image 2025-06-04 at 02.14.04_e3212805.jpg" alt="Step 4">
-            <img src="images/development_process/Game_Dev/Two_Instance_Login.png" alt="Step 5">
-            <img src="images/development_process/Game_Dev/VR_Simulation.png" alt="Step 6">
-          </div>
-      
-          <!-- 🔹 Right: Description -->
-          <div class="implementation-text">
-            <p>
-              The <strong>VR Multiplayer Golf Game</strong> is implemented using a combination of modern tools and platforms:
-            </p>
-            <ul>
-              <li><strong>Unity (2022.3.62f1):</strong> The core game engine used to develop the VR environment, implement realistic golf physics, manage gameplay mechanics, and enable networked multiplayer features. Unity handles all in-game logic, user interface, and real-time synchronization of player actions.</li>
-              <li><strong>Photon PUN & Photon Voice:</strong> Provides robust multiplayer networking and real-time voice chat. Photon PUN synchronizes game state, player positions, and interactions across devices, while Photon Voice enables secure, low-latency voice communication between players using AES-256 encryption.</li>
-              <li><strong>Google Sign-In (Firebase Auth or Unity Social APIs):</strong> Used for secure user authentication. Players log in with their Google accounts, and their profile images are displayed as custom avatars within the game.</li>
-              <li><strong>ESP32 Controllers:</strong> Custom-built golf stick and handwear controller use ESP32 microcontrollers to capture motion and button input. These devices communicate with the VR app via and Wi-Fi UDP, enabling real-time tracking and haptic feedback.</li>
-              <li><strong>Google Cardboard Plugin:</strong> Integrates mobile VR support, allowing the game to run on standard Android smartphones mounted in VR headsets.</li>
-              <li><strong>Programming Languages:</strong> C# for Unity scripts, C++ for ESP32 firmware, and Java for Unity native plugins.</li>
-              <li><strong>Platform:</strong> Android-based mobile VR devices (using standard VR boxes).</li>
-              <li><strong>Input APIs:</strong> Unity Input System processes motion data from the smartphone sensors and ESP32 devices, as well as button presses for in-game actions and menu navigation.</li>
-              <li><strong>Build System:</strong> Gradle and Unity Build Pipeline are used for compiling and deploying the application to Android devices.</li>
-            </ul>
-            
+          <div class="row content">
+            <div class="col-lg-4" data-aos="fade-up-right">
+              <h4 class="text-center pb-3">Real World Problem 🌎</h4>
+                <p class="justified-text">
+                 In today's fast-paced world, many people struggle to maintain strong social connections, especially when living far from loved ones. 
+                 Additionally, an increasing number of individuals spend too much time on sedentary gaming, lacking the physical activity needed for a healthy lifestyle. 
+                 Urban environments often offer limited space and time for outdoor recreation, further reducing opportunities for exercise and social bonding.
+    </p>
+            </div>
+            <div class="col-lg-4 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <h4 class="text-center pb-3">Proposed Solution💡</h4>
+              <p class="justified-text">
+      Our proposed solution is the <b>VR Multiplayer Golf Game</b>,an immersive and interactive platform that brings people together virtually, 
+      no matter where they are in the world. With realistic golf mechanics and smart hardware components like a golf stick, VR headset, and wrist-worn sensor, 
+      players engage in physical activity while enjoying social interaction. <br/>
+      The game is designed not just for entertainment, but to promote movement, communication, and wellbeing.
+    </p>
+            </div>
+            <div class="col-lg-4 pt-4 pt-lg-0" data-aos="fade-up-left" data-aos-delay="100">
+              <h4 class="text-center pb-3">Potential Impact 🚀</h4>
+              <p class="justified-text">
+      Our solution offers a dual benefit: it strengthens long-distance relationships and encourages physical movement during gameplay. 
+      By combining the popularity of gaming with exercise, it helps users stay active and socially connected. <br/>
+      In the long term, this can contribute to better mental and physical health, reduce screen-time-induced health issues like obesity, 
+      and promote a more balanced lifestyle in tech-driven societies.
+    </p>
+            </div>
           </div>
         </div>
-    </section>
-      
+      </section>
 
-    <section id="circuit">
-      <p class="topic">Circuit Diagram</p>
-      <div class="circuit-content">
-        <div class="circuit-description">
-          <p>
-            The VR Golf hardware stack is designed for reliability, low latency, and ease of integration with the VR system. The main components and their technical details are:
-            <ul>
-              <li>
-                <strong>ESP32 (30-pin):</strong> 
+      <section id="features" class="section-bg"> 
+        <div class="container">
+          <div class="row content">
+            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <div class="section-left" data-aos="fade-up" data-aos-delay="100">
+                <h2>Features</h2>
+              </div>
+              <div class="featureslist">
                 <ul>
-                  <li>Acts as the core microcontroller for sensor interfacing, input processing, and Wi-Fi communication.</li>
-                  <li><strong>Operating Voltage:</strong> 3.3V (logic), powered via two 3.7V Li-ion battery regulated down to 5V using Buck module.</li>
-                  <li><strong>Key Pins Used:</strong>
-                    <ul>
-                      <li><code>GPIO 21/22</code> - I2C communication with MPU6050 (SDA/SCL)</li>
-                      <li><code>GPIO 14/27/26/25/33/32</code> - Digital input from push buttons</li>
-                      <!-- <li><code>GPIO 25</code> - Output to drive the vibrator motor (via transistor)</li> -->
-                      <li><code>vin, GND</code> - Power supply</li>
-                    </ul>
+                  <li>
+                    <p data-aos="zoom-in-up">
+                      <b>Real-time Multiplayer</b>
+                    </p>
+                    <span data-aos="zoom-in-up" data-aos-delay="300">
+                      Play against friends in a synchronized VR environment.
+                    </span>
                   </li>
-                  <li>Supports both Wi-Fi (UDP) and Bluetooth (BLE) for communication with the Unity VR app.</li>
+                  
+                  <li>
+                    <p data-aos="zoom-in-up">
+                      <b>Physical Interaction</b>
+                    </p>
+                    <span data-aos="zoom-in-up" data-aos-delay="300">
+                      Use a custom-built golf stick and handwear controller for realistic swing and motion tracking.
+                    </span>
+                  </li>
+
+                  <li>
+                    <p data-aos="zoom-in-up">
+                      <b>Voice Chat</b>
+                    </p>
+                    <span data-aos="zoom-in-up" data-aos-delay="300">
+                      Communicate live with your opponent using secure, low-latency.
+                    </span>
+                  </li>
+
+                  <li>
+                    <p data-aos="zoom-in-up">
+                      <b>Authentication</b>
+                    </p>
+                    <span data-aos="zoom-in-up" data-aos-delay="300">
+                      Sign in easily using email and password.
+                    </span>
+                  </li>
+
+                  <li>
+                    <p data-aos="zoom-in-up">
+                      <b>Session Statistics</b>
+                    </p>
+                    <span data-aos="zoom-in-up" data-aos-delay="300">
+                      Track scores, and game progress in real time.
+                    </span>
+                  </li>
+                
+                  <li>
+                    <p data-aos="zoom-in-up">
+                      <b>Haptic Feedback</b>
+                    </p>
+                    <span data-aos="zoom-in-up" data-aos-delay="300">
+                      Feel every swing and impact through vibration in the hardware.
+                    </span>
+                  </li>
+                  <li>
+                    <p data-aos="zoom-in-up">
+                      <b>Cross-Platform Play</b>
+                    </p>
+                    <span data-aos="zoom-in-up" data-aos-delay="300">
+                      Works on any Android phone with VR headset support.
+                    </span>
+                  </li>
                 </ul>
-              </li>
-              <li>
-                <strong>MPU6050 Gyroscope/Accelerometer:</strong>
-                <ul>
-                  <li>Used for 6-axis motion tracking (acceleration + rotation) in the golf stick and handwear controller.</li>
-                  <li><strong>Operating Voltage:</strong> 3.3V to 5V (connected to ESP32's 3.3V supply)</li>
-                  <li><strong>I2C Pins:</strong> SDA (to ESP32 GPIO 21), SCL (to ESP32 GPIO 22)</li>
-                  <li>Provides real-time orientation and swing data to the ESP32.</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Push Buttons:</strong>
-                <ul>
-                  <li>Used for swing detection and menu navigation.</li>
-                  <li><strong>Operating Voltage:</strong> 3.3V logic (pulled up internally or externally)</li>
-                  <li><strong>Pin Connections:</strong> Connected to ESP32 GPIOs (e.g., GPIO 14, 27, 26, 25, 33, 32) with one side to GND.</li>
-                </ul>
-              </li>
-              <!-- <li>
-                <strong>Vibrator Motor:</strong>
-                <ul>
-                  <li>Provides haptic feedback for enhanced immersion (e.g., on ball impact).</li>
-                  <li><strong>Operating Voltage:</strong> 3V (powered via ESP32 through a transistor switch)</li>
-                  <li><strong>Pin Connection:</strong> Controlled by ESP32 GPIO 25 via NPN transistor (e.g., 2N2222 or S8050) for sufficient current drive.</li>
-                </ul>
-              </li> -->
-              <li>
-                <strong>Lithium-ion Battery (18650):</strong>
-                <ul>
-                  <li>Provides portable power for the entire hardware module.</li>
-                  <li><strong>Nominal Voltage:</strong> 3.7V</li>
-                  <li><strong>Voltage Regulation:</strong> Buck converter module steps down to 5V for ESP32 and peripherals.</li>
-                  <li>Includes a battery holder for safety and easy replacement.</li>
-                </ul>
-              </li>
-            </ul>
-            <strong>Integration Notes:</strong> All components are securely connected and managed by the ESP32, with careful PCB routing and enclosure design for durability, comfort, and safety during gameplay.
-          </p>
-          
-        </div>
-        <div class="circuit-image">
-          <!-- Top: Main Circuit Diagram -->
-          <div class="circuit-main-img">
-            <img src="images/circuit_diagram_vr_golf.png" alt="VR Golf Circuit Diagram">
+              </div>
+            </div>
+
+            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <div class="slider pt-5 pt-lg-6">
+                <div class="slides">
+                    <div class="slide"><img src="./assets/img/sliderImages/1.png" alt="Image 1"></div>
+                    <div class="slide"><img src="./assets/img/sliderImages/2.png" alt="Image 2"></div>
+                    <div class="slide"><img src="./assets/img/sliderImages/3.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="./assets/img/sliderImages/4.png" alt="Image 4"></div>
+                    <div class="slide"><img src="./assets/img/sliderImages/5.jpg" alt="Image 5"></div>
+                    <div class="slide"><img src="./assets/img/sliderImages/6.jpg" alt="Image 6"></div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <div class="dots">
+                  <!-- Dots will be inserted here -->
+                </div>
+                <button class="slide-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="slide-btn next" onclick="moveSlide(1)">&#10095;</button>
+              </div>
+            </div>
           </div>
-          <!-- Bottom: 2x2 Grid of Components -->
-          <div class="circuit-components-grid">
-            <div class="circuit-component">
-              <img src="images/esp32.png" alt="ESP32">
-              <span>ESP32</span>
-            </div>
-            <div class="circuit-component">
-              <img src="images/gyro.png" alt="MPU6050">
-              <span>MPU6050</span>
-            </div>
-            <div class="circuit-component">
-              <img src="images/buck.png" alt="Push Button">
-              <span>Buck Module</span>
-            </div>
-            <div class="circuit-component">
-              <img src="images/vibrator.png" alt="Vibrator Motor">
-              <span>Vibrator Motor</span>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>  
-
-
-
-    <section id="connectivity">
-      <p class="topic">Device Connectivity & Data Flow</p>
-      <div class="connectivity-content">
-        <div class="connectivity-diagram">
-          <img src="images/device_connection.png" alt="Device Connectivity Diagram">
-        </div>
-        <div class="connectivity-description">
-          <p>
-            <strong>System Communication:</strong>
-            <ul>
-              <li>Both the golf stick and handwear controller use <strong>ESP32</strong> modules to collect sensor and button data.</li>
-              <li>Data is transmitted via <strong>Wi-Fi UDP</strong> to the smartphone running the VR app.</li>
-              <li>The mobile app (built with Unity) processes the incoming data to update the virtual environment in real time.</li>
-              <li>Multiplayer synchronization, voice chat, and cloud storage are managed via <strong>Photon PUN/Voice</strong> and <strong>Firebase</strong>.</li>
-            </ul>
-            <strong>Connectivity Flow:</strong>
-            <ol>
-              <li>Player swings the golf stick; sensor and button data are read by the ESP32.</li>
-              <li>ESP32 transmits data over Wi-Fi UDP to the smartphone.</li>
-              <li>Unity app interprets the data for in-game actions and physics simulation.</li>
-              <li>Game state and player actions are synchronized across all players via Photon Cloud servers.</li>
-            </ol>
-          </p>
-        </div>
-      </div>
+      </section>
     </section>
     
+    <section id="implementation">
+      <section id="solution">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Solution Architecture</h2>
+          </div>
 
-    <section id="budget">
-        <p class="topic">Budget</p>
-        <div class="budget-container">
-          <table class="budget-table">
-            <thead>
-              <tr>
-                <th>Item Name</th>
-                <th>Unit Price (LKR)</th>
-                <th>Quantity</th>
-                <th>Price (LKR)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>ESP32</td>
-                <td>1,690</td>
-                <td>2</td>
-                <td>3,380</td>
-              </tr>
-              <tr>
-                <td>Adjustable Buck Module</td>
-                <td>430</td>
-                <td>2</td>
-                <td>860</td>
-              </tr>
-              <tr>
-                <td>Push Buttons</td>
-                <td>40</td>
-                <td>12</td>
-                <td>480</td>
-              </tr>
-              <tr>
-                <td>Vibrator</td>
-                <td>120</td>
-                <td>2</td>
-                <td>240</td>
-              </tr>
-              <tr>
-                <td>MPu 6050</td>
-                <td>740</td>
-                <td>2</td>
-                <td>1480</td>
-              </tr>
-              <tr>
-                <td>18650 Battery</td>
-                <td>470</td>
-                <td>4</td>
-                <td>1,880</td>
-              </tr>
-              <tr>
-                <td>Battery Holder</td>
-                <td>100</td>
-                <td>2</td>
-                <td>200</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <th colspan="3">Total</th>
-                <th>7,220</th>
-              </tr>
-            </tfoot>
-          </table>
-      
-          <p class="purchase-link">
-            🔗 Purchased from: <a href="https://www.duino.lk" target="_blank">duino.lk</a>
-          </p>
-        </div>
-    </section>
-      
-
-    <section id="team">
-        <p class="topic">Team Members</p>
-
-        <div class="team-container">
-          <div class="team-member">
-            <img src="images/Members/methpura.jpg" alt="John Doe">
-            <h3>Kavindu Methpura</h3>
-            <!-- <p>Hardware de</p> -->
-          </div>
-          <div class="team-member">
-            <img src="images/Members/binuri.png" alt="Jane Smith">
-            <h3>Binuri Senavirathna</h3>
-          </div>
-          <div class="team-member">
-            <img src="images/Members/rashmika.jpeg" alt="Emily Johnson">
-            <h3>Rashmika Sewmini</h3>
-          </div>
-          <div class="team-member">
-            <img src="images/Members/janith.jpg" alt="Michael Brown">
-            <h3>Janith Wanasinghe</h3>
-          </div>
-        </div>
-    </section>
-      
-    <section id="gallery">
-        <p class="topic">Gallery</p>
-        <div class="gallery-container">
-            <div class="gallery-grid">
-                <img src="images/gallery/1.jpg" alt="Gallery Image 1">
-                <img src="images/gallery/2.jpg" alt="Gallery Image 2">
-                <img src="images/gallery/3.jpg" alt="Gallery Image 3">
-                <img src="images/gallery/4.jpg" alt="Gallery Image 4">
-                <img src="images/gallery/5.jpg" alt="Gallery Image 5">
-                <img src="images/gallery/6.jpg" alt="Gallery Image 6">
-                <img src="images/gallery/1.jpg" alt="Gallery Image 7">
-                <img src="images/gallery/2.jpg" alt="Gallery Image 8">
+          <div class="row content">
+            <div class="col-md-6" data-aos="fade-right">
+              <img src="./assets/img/highleveloverview.png" class="img-fluid">
             </div>
+            <div class="col-md-6 pt-6 fs-4">
+              <h2>High Level Architecture</h2>
+
+            </div> 
+          </div>
+
+          <div class="row content">
+            <div class="col-md-6 pt-5">
+              <h2>Dataflow</h2>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+              <img src="./assets/img/dataflow.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
         </div>
+      </section>
+
+<!-- ======= Software Architecture Section ======= -->
+<section id="software" class="section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Software Architecture</h2>
+    </div>
+
+    <div class="row content">
+      <div class="col-md-6">
+        <img src="./assets/img/software.png" class="img-fluid" alt="Software Architecture">
+      </div>
+
+      <div class="col-md-6 pt-5 fs-4">
+        <p><b>Unity</b>: Used for VR game development. Modular, scene-based Unity project with C#. Photon PUN is used for multiplayer networking, and Photon Voice provides real-time audio communication between players.</p>
+
+        <p><b>Firebase</b>: Manages user authentication (email and password) and stores login data securely.</p>
+
+        <p><b>UDP Communication</b>: ESP32 reads motion data from the MPU6050 sensor, connects to a Wi-Fi network, and sends real-time data to the smartphone via UDP packets.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Hardware Architecture Section ======= -->
+<section id="hardware">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Hardware Architecture</h2>
+    </div>
+
+    <div class="row content">
+      <div class="col-lg-6">
+        <img src="./assets/img/circuit_diagram_vr_golf.png" class="img-fluid" alt="Hardware Architecture">
+      </div>
+
+      <div class="col-lg-3 pt-4 pt-lg-0">
+        <h3>Input</h3>
+        <h5>1. MPU6050 Sensor</h5>
+        <ul>
+          <li>Detects swing motion and angle</li>
+        </ul>
+        <h5>2. Push Button</h5>
+        <ul>
+          <li>Triggers swing or menu actions</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 pt-4 pt-lg-0">
+        <h3>Output</h3>
+        <h5>1. Vibration Motor</h5>
+        <ul>
+          <li>Simulates haptic feedback on swing or hit</li>
+          <li>Power-up and collision feedback</li>
+        </ul>
+        <h5>2. Smartphone (Unity App)</h5>
+        <ul>
+          <li>Displays VR golf environment</li>
+          <li>Handles player actions and multiplayer sync</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section id="game-flow" class="section-bg"> 
+  <div class="container">
+    <div class="row content">
+      
+      <!-- Left text -->
+      <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-left" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="section-title">Game Flow</h2>
+        </div>
+        <div class="featureslist">
+          <ul>
+            <li>
+              <p data-aos="zoom-in-up">
+                <b>Login Page</b>
+              </p>
+              <span data-aos="zoom-in-up" data-aos-delay="300">
+                Securely log in with your email and password to access your account.
+              </span>
+            </li>
+
+            <li>
+              <p data-aos="zoom-in-up">
+                <b>Signup Page</b>
+              </p>
+              <span data-aos="zoom-in-up" data-aos-delay="300">
+                Create a new account with ease and join the game community.
+              </span>
+            </li>
+
+            <li>
+              <p data-aos="zoom-in-up">
+                <b>Nickname Selection</b>
+              </p>
+              <span data-aos="zoom-in-up" data-aos-delay="300">
+                Choose a unique nickname to represent yourself in the game.
+              </span>
+            </li>
+
+            <li>
+              <p data-aos="zoom-in-up">
+                <b>Lobby</b>
+              </p>
+              <span data-aos="zoom-in-up" data-aos-delay="300">
+                Meet other players, create or join matches, and prepare to play.
+              </span>
+            </li>
+
+            <li>
+              <p data-aos="zoom-in-up">
+                <b>Gameplay</b>
+              </p>
+              <span data-aos="zoom-in-up" data-aos-delay="300">
+                Immerse yourself in multiplayer VR golf matches with real-time interactions.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right slider -->
+      <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="slider pt-5 pt-lg-6">
+          <div class="slides">
+            <div class="slide"><img src="./assets/img/gameflow/1.jpg" alt="1"></div>
+            <div class="slide"><img src="./assets/img/gameflow/2.jpg" alt="2"></div>
+            <div class="slide"><img src="./assets/img/gameflow/3.jpg" alt="3"></div>
+            <div class="slide"><img src="./assets/img/gameflow/4.jpg" alt="4"></div>
+            <div class="slide"><img src="./assets/img/gameflow/5.jpg" alt="5"></div>
+            <div class="slide"><img src="./assets/img/gameflow/6.jpg" alt="6"></div>
+            <div class="slide"><img src="./assets/img/gameflow/7.jpg" alt="7"></div>
+          </div>
+          <div class="dots">
+            <!-- Dots will be inserted here -->
+          </div>
+          <button class="slide-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="slide-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+ 
+<section id="budget">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Budget</h2>
+      <div>
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Component</th>
+              <th>Quantity</th>
+              <th style="text-align: right;">Price per item (LKR)</th>
+              <th style="text-align: right;">Price (LKR)</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-body"><th scope="row">01</th><td>Breadboard Power Supply</td><td>1</td><td style="text-align: right;">360.00</td><td style="text-align: right;">360.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">02</th><td>Battery Holder</td><td>2</td><td style="text-align: right;">145.00</td><td style="text-align: right;">290.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">03</th><td>9V 2A Power Supply</td><td>1</td><td style="text-align: right;">975.00</td><td style="text-align: right;">975.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">04</th><td>PCB Dot Board</td><td>3</td><td style="text-align: right;">60.00</td><td style="text-align: right;">180.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">05</th><td>DC Power Jack</td><td>3</td><td style="text-align: right;">30.00</td><td style="text-align: right;">90.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">06</th><td>Screwdriver Flat</td><td>1</td><td style="text-align: right;">280.00</td><td style="text-align: right;">280.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">07</th><td>Screwdriver Phillips</td><td>1</td><td style="text-align: right;">280.00</td><td style="text-align: right;">280.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">08</th><td>Electric Solder</td><td>1</td><td style="text-align: right;">930.00</td><td style="text-align: right;">930.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">09</th><td>HC-05 Bluetooth Module</td><td>3</td><td style="text-align: right;">1090.00</td><td style="text-align: right;">3270.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">10</th><td>MPU 6050</td><td>2</td><td style="text-align: right;">595.00</td><td style="text-align: right;">1190.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">11</th><td>Jumper Wires</td><td>2</td><td style="text-align: right;">190.00</td><td style="text-align: right;">380.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">12</th><td>Push Button</td><td>15</td><td style="text-align: right;">60.00</td><td style="text-align: right;">900.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">13</th><td>LM2596 Step Down</td><td>2</td><td style="text-align: right;">280.00</td><td style="text-align: right;">560.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">14</th><td>ESP32 USB-C</td><td>2</td><td style="text-align: right;">1490.00</td><td style="text-align: right;">2980.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">15</th><td>3D Print</td><td>1</td><td style="text-align: right;">7580.00</td><td style="text-align: right;">7580.00</td><td></td></tr>
+            <tr class="table-body"><th scope="row">16</th><td>3D Design</td><td>1</td><td style="text-align: right;">4000.00</td><td style="text-align: right;">4000.00</td><td></td></tr>
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <th style="text-align: right;">Total</th>
+              <th style="text-align: right;">24245.00</th>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="gallery" class="gallery section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>Gallery</h2>
+      <p>Explore some memorable moments</p>
+    </div>
+
+    <div class="row gallery-container">
+      <div class="col-lg-4 col-md-6 gallery-item">
+        <img src="assets/img/gallery/1.jpg" class="img-fluid" alt="Gallery Image 1">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item">
+        <img src="assets/img/gallery/2.jpg" class="img-fluid" alt="Gallery Image 2">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item">
+        <img src="assets/img/gallery/3.jpg" class="img-fluid" alt="Gallery Image 3">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item">
+        <img src="assets/img/gallery/4.jpg" class="img-fluid" alt="Gallery Image 4">
+      </div>
+      <div class="col-lg-4 col-md-6 gallery-item">
+        <img src="assets/img/gallery/5.jpg" class="img-fluid" alt="Gallery Image 5">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>We are 3rd year Undergraduates at the Department of Computer Engineering, Faculty of Engineering, University of Peradeniya</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic">
+                <img src="https://github.com/KavinduMethpura.png" class="img-fluid" alt="Methpura">
+              </div>
+              <div class="member-info">
+                <h4>Kavindu Methpura</h4>
+                <span>E/20/254</span>
+                <div class="social">
+                  <a href="https://github.com/KavinduMethpura" title="Github"><i class="ri-github-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/kavindu-prabhath-methpura-b20a97242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " title="LinkedIn"><i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="https://people.ce.pdn.ac.lk/students/e20/254/" title="Department Profile"><i class="bi bi-person-fill"></i> </a>
+                  <a href="https://www.thecn.com/EM1302" title="CN ePortfolio"><i class="bi bi-person-vcard"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic">
+                <img src="https://github.com/BinuriSenavirathna.png" class="img-fluid" alt="Binuri">
+              </div>
+              <div class="member-info">
+                <h4>Binuri Senavirathna</h4>
+                <span>E/20/367</span>
+                <div class="social">
+                  <a href="https://github.com/BinuriSenavirathna" title="Github"><i class="ri-github-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/binuri-chirathma-6ab217261" title="LinkedIn"><i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="https://people.ce.pdn.ac.lk/students/e20/367/" title="Department Profile"><i class="bi bi-person-fill"></i> </a>
+                  <a href="https://www.thecn.com/ES1373" title="CN ePortfolio"><i class="bi bi-person-vcard"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic">
+                <img src="https://github.com/RashmikaSewmini.png" class="img-fluid" alt="Rashmika">
+              </div>
+              <div class="member-info">
+                <h4>Rashmika Sewmini</h4>
+                <span>E/20/370</span>
+                <div class="social">
+                  <a href="https://github.com/RashmikaSewmini" title="Github"><i class="ri-github-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/rashmika-sewmini-038418300?trk=contact-info" title="LinkedIn"><i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="https://people.ce.pdn.ac.lk/students/e20/370/" title="Department Profile"><i class="bi bi-person-fill"></i> </a>
+                  <a href="https://www.thecn.com/KS2820" title="CN ePortfolio"><i class="bi bi-person-vcard"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic">
+                <img src="https://github.com/janithkw.png" class="img-fluid" alt="janith">
+              </div>
+              <div class="member-info">
+                <h4>Janith Wanasinghe</h4>
+                <span>E/20/420</span>
+                <div class="social">
+                  <a href="https://github.com/janithkw" title="Github"><i class="ri-github-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/janithwanasinghe" title="LinkedIn"><i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="https://people.ce.pdn.ac.lk/students/e20/420/" title="Department Profile"><i class="bi bi-person-fill"></i> </a>
+                  <a href="https://www.thecn.com/EW778" title="CN ePortfolio"><i class="bi bi-person-vcard"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="container">
+        <div class="row content">
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="section-left" data-aos="fade-up" data-aos-delay="100">
+              <h2>Supervisor</h2>
+            </div>
+            <div class="row">
+              <div class="member d-flex align-items-start">
+                <div class="pic">
+                  <img src="./assets/img/isuru_sir.png" class="img-fluid" alt="Deshan">
+                </div>
+                <div class="member-info">
+                  <h4>Dr. Isuru Nawinne</h4>
+                    <div class="social">
+                      <a href="https://www.linkedin.com/in/isuru-nawinne-73302833/"><i class="ri-linkedin-box-fill"></i> </a>      
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <section id="footer">
+      <div class="container">
+        <div class="row content">
+          <a href="https://github.com/cepdnaclk/e20-3yp-VR-Multiplayer-Golf-Game">
+            <i class="bi bi-kanban"></i>
+            Project Repository
+          </a>
+          <a href="http://www.ce.pdn.ac.lk/">   
+            <i class="bi bi-cpu-fill"></i>
+            Department of Computer Engineering
+          </a>
+          <a href="https://eng.pdn.ac.lk/">
+            <i class="bi bi-globe"></i>
+            University of Peradeniya
+          </a>
+          <a href="https://projects.ce.pdn.ac.lk/">
+            <i class="bi bi-server"></i>
+            Student Projects
+          </a>
+        </div>
+      </div>
+    </section>
+   
+  </main>
 
-    <footer>
-        <p>&copy; 2025 VR Multiplayer Golf Game. All rights reserved.</p>
-        <p>Contact us at: <a href="#">vrgolf@gmail.com</a></p>
-        <p>Follow us on social media: 
-            <a href="#">Twitter</a>, 
-            <a href="#">Facebook</a>, 
-            <a href="#">Instagram</a>
-        </p>
-    </footer>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <script src="js/index.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>

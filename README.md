@@ -77,7 +77,7 @@ The system consists of:
 ![Circuit Diagram](docs/images/circuit_diagram_vr_golf.png)
 
 ---
-#### 3D model
+#### 3D Model
 
 ![3D-model](docs/images/3d_model.png)
 

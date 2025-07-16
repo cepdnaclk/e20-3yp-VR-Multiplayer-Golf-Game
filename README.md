@@ -33,8 +33,7 @@ We used Unity Version Control for managing the project's source code and collabo
 - **Real-time Multiplayer:** Play against friends in a synchronized VR environment.
 - **Physical Interaction:** Use a custom-built golf stick and handwear controller for realistic swing and motion tracking.
 - **Voice Chat:** Communicate live with your opponent using secure, low-latency voice chat.
-- **Google Authentication:** Sign in easily and use your Google profile picture as your in-game avatar.
-- **Custom Avatars:** Display your Google profile image in the game.
+- **Authentication:** Sign in easily using email and password.
 - **Session Statistics:** Track shots, scores, and game progress in real time.
 - **Haptic Feedback:** Feel every swing and impact through vibration motors in the hardware.
 - **Cross-Platform Play:** Works on any Android phone with VR headset support.
@@ -49,7 +48,7 @@ The system consists of:
 - **Client Devices:** Android smartphones running the Unity VR app, mounted in VR headsets.
 - **Physical Controllers:** ESP32-powered golf stick and handwear controller, each with sensors and buttons.
 - **Networking:** Photon Cloud for multiplayer synchronization and voice chat.
-- **Authentication:** Google Sign-In for secure login and custom avatars.
+- **Authentication:** Sign-In for secure login.
 
 ## Data Flow
 
@@ -87,7 +86,7 @@ The system consists of:
 1. Unity Game Development
    - Tool Used: Unity Hub with Unity Editor v2022.3.62f1, C# languaage, Modular, scene-based,Photon PUN, Photon Voice, assets.
 2.  Firebase Authentication
-    -  User registration (email & password), Login/logout functionality.
+    -  User registration (email & password), Login functionality.
 3. UDP Communication
    - ESP32 reads motion data from the MPU6050 sensor and it connects to a Wi-Fi network and sends the data via UDP packets.
   

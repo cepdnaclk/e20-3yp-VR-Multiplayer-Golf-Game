@@ -192,6 +192,316 @@
 
 // program eka ptan ganne double press eken passe, 500 ms press karddi, doouble press eken passe palaweni data set eka value 13ma send karnawa 13th bit eka 1 karala. ita passe aye eka 0 wenawa.
 
+// #include <WiFi.h>
+// #include <WiFiUdp.h>
+// #include <Wire.h>
+// #include <Adafruit_MPU6050.h>
+// #include <Adafruit_Sensor.h>
+
+// Adafruit_MPU6050 mpu;
+// WiFiUDP udp;
+
+// // Wi-Fi credentials
+// const char* ssid = "MethpuraKP";
+// const char* password = "123456789";
+
+// // IP and port of the mobile device running Unity
+// const char* udpAddress = "192.168.8.186"; // <-- Replace with your Unity device IP
+// const int udpPort = 4210;
+
+// int buttonPins[6] = {14, 27, 26, 25, 33, 32}; // Button pin mapping
+
+// // State tracking
+// bool programStarted = false;         // Indicates whether double-press was successful
+// unsigned long firstPressTime = 0;    // For timing the first press
+// int pressCount = 0;                  // Count button 6 presses
+// bool calibrationSent = false;        // Sends calibration bit only once
+
+// void setup() {
+//   Serial.begin(115200);
+//   delay(1000);
+
+//   // Connect to Wi-Fi
+//   Serial.print("Connecting to Wi-Fi");
+//   WiFi.begin(ssid, password);
+//   while (WiFi.status() != WL_CONNECTED) {
+//     delay(500);
+//     Serial.print(".");
+//   }
+//   Serial.println("\nConnected to Wi-Fi. IP: ");
+//   Serial.println(WiFi.localIP());
+
+//   // Initialize I2C and MPU6050
+//   Wire.begin();
+//   if (!mpu.begin()) {
+//     Serial.println("Failed to find MPU6050");
+//     while (1) delay(10);
+//   }
+//   Serial.println("MPU6050 connected!");
+
+//   // Configure MPU settings
+//   mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+//   mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+//   mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
+
+//   // Setup buttons
+//   for (int i = 0; i < 6; i++) {
+//     pinMode(buttonPins[i], INPUT_PULLUP);
+//   }
+
+//   Serial.println("Double-press Button 6 within 500ms to start...");
+// }
+
+// void loop() {
+//   static bool lastState = HIGH;
+//   bool currentState = digitalRead(buttonPins[5]); // Button 6
+
+//   if (!programStarted) {
+//     // Detect falling edge (button press)
+//     if (lastState == HIGH && currentState == LOW) {
+//       unsigned long now = millis();
+
+//       if (pressCount == 0) {
+//         firstPressTime = now;
+//         pressCount = 1;
+//       } else if (pressCount == 1 && (now - firstPressTime <= 500))
+//       { // press time check karanne methanin; 500 ms athlatha press karanna ona. nathnam aye state eka 0 wenawa press eke ilaga 500 ms athulatha. 
+//         programStarted = true;
+//         Serial.println("Double press detected. Program started!");
+//       }
+//       else
+//       {
+//         pressCount = 0; // Reset if delay too long
+//       }
+//     }
+
+//     // Reset if time expired without second press
+//     if (pressCount == 1 && (millis() - firstPressTime > 500)) {
+//       pressCount = 0;
+//     }
+
+//     lastState = currentState;
+//     delay(10); // debounce
+//     return;    // wait until program starts
+//   }
+
+//   // --- Main logic starts after calibration ---
+
+//   bool b6Pressed = (currentState == LOW);
+//   String data;
+
+//   // Read accelerometer and gyroscope
+//   sensors_event_t a, g, temp;
+//   mpu.getEvent(&a, &g, &temp);
+
+//   if (b6Pressed) {
+//     data = String(a.acceleration.x, 2) + "," +
+//            String(a.acceleration.y, 2) + "," +
+//            String(a.acceleration.z, 2) + "," +
+//            String(g.gyro.x, 2) + "," +
+//            String(g.gyro.y, 2) + "," +
+//            String(g.gyro.z, 2);
+//   } else {
+//     data = "0,0,0,0,0,0"; // Zero output when button not held
+//   }
+
+//   // Append button states (button 1–6)
+//   for (int i = 0; i < 6; i++) {
+//     int state = digitalRead(buttonPins[i]) == LOW ? 1 : 0;
+//     data += "," + String(state);
+//   }
+
+//   // Append calibration bit (13th bit): send '1' once after double press
+//   if (!calibrationSent) {
+//     data += ",1";
+//     calibrationSent = true; // only once
+//   } else {
+//     data += ",0";
+//   }
+
+//   // Send the data packet via UDP
+//   udp.beginPacket(udpAddress, udpPort);
+//   udp.print(data);
+//   udp.endPacket();
+
+//   Serial.println(data); // Optional debug output
+//   delay(30); // ~33 Hz
+// }
+
+
+//motor testing
+// #define MOTOR_PIN 23  // GPIO 23 for vibration motor
+// #include <Arduino.h>
+
+// void setup() {
+//     Serial.begin(115200);
+//     pinMode(MOTOR_PIN, OUTPUT);
+//     digitalWrite(MOTOR_PIN, LOW);  // Ensure motor is OFF at startup
+// }
+
+// void loop() {
+//     Serial.println("Vibration ON for 1 second...");
+//     digitalWrite(MOTOR_PIN, HIGH);  // Turn ON motor
+//     delay(1000);
+
+//     Serial.println("Vibration OFF for 1 second...");
+//     digitalWrite(MOTOR_PIN, LOW);   // Turn OFF motor
+//     delay(1000);
+// }
+
+
+
+//code 5 - test with vibrator
+
+// #include <Arduino.h>
+// #include <WiFi.h>
+// #include <WiFiUdp.h>
+// #include <Wire.h>
+// #include <Adafruit_MPU6050.h>
+// #include <Adafruit_Sensor.h>
+
+// Adafruit_MPU6050 mpu;
+// WiFiUDP udp;
+
+// // Wi-Fi credentials
+// const char* ssid = "MethpuraKP";
+// const char* password = "123456789";
+
+// // Unity Device IP & Port
+// const char* udpAddress = "192.168.8.186";
+// const int udpPort = 4210;
+
+// // Button pins
+// int buttonPins[6] = {14, 27, 26, 25, 33, 32};
+
+// // Vibration motor GPIO
+// #define MOTOR_PIN 23  
+
+// // States
+// bool programStarted = false;
+// unsigned long firstPressTime = 0;
+// int pressCount = 0;
+// bool calibrationSent = false;
+// unsigned long lastVibrationTime = 0;
+
+// void setup() {
+//     Serial.begin(115200);
+//     delay(1000);
+
+//     // Wi-Fi Connect
+//     Serial.print("Connecting to Wi-Fi");
+//     WiFi.begin(ssid, password);
+//     while (WiFi.status() != WL_CONNECTED) {
+//         delay(500);
+//         Serial.print(".");
+//     }
+//     Serial.println("\nConnected to Wi-Fi. IP: ");
+//     Serial.println(WiFi.localIP());
+
+//     // MPU6050 Init
+//     Wire.begin();
+//     if (!mpu.begin()) {
+//         Serial.println("Failed to find MPU6050");
+//         while (1) delay(10);
+//     }
+//     Serial.println("MPU6050 connected!");
+
+//     mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+//     mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+//     mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
+
+//     // Buttons
+//     for (int i = 0; i < 6; i++) {
+//         pinMode(buttonPins[i], INPUT_PULLUP);
+//     }
+
+//     // Motor Pin
+//     pinMode(MOTOR_PIN, OUTPUT);
+//     digitalWrite(MOTOR_PIN, LOW);
+
+//     Serial.println("Double-press Button 6 within 500ms to start...");
+// }
+
+// void loop() {
+//     static bool lastState = HIGH;
+//     bool currentState = digitalRead(buttonPins[5]); // Button 6
+
+//     if (!programStarted) {
+//         if (lastState == HIGH && currentState == LOW) {
+//             unsigned long now = millis();
+//             if (pressCount == 0) {
+//                 firstPressTime = now;
+//                 pressCount = 1;
+//             } else if (pressCount == 1 && (now - firstPressTime <= 500)) {
+//                 programStarted = true;
+//                 Serial.println("Double press detected. Program started!");
+//             } else {
+//                 pressCount = 0;
+//             }
+//         }
+//         if (pressCount == 1 && (millis() - firstPressTime > 500)) {
+//             pressCount = 0;
+//         }
+//         lastState = currentState;
+//         delay(10);
+//         return;
+//     }
+
+//     bool b6Pressed = (currentState == LOW);
+//     String data;
+
+//     // MPU Data
+//     sensors_event_t a, g, temp;
+//     mpu.getEvent(&a, &g, &temp);
+
+//     float az = a.acceleration.z;
+
+//     // Trigger vibration when Az between 9 and 10
+//     if (az >= 8.0 && az <= 10.0 && (millis() - lastVibrationTime > 1000)) {
+//         Serial.println("Vibration triggered! Az between 8-10");
+//         digitalWrite(MOTOR_PIN, HIGH);
+//         delay(300);
+//         digitalWrite(MOTOR_PIN, LOW);
+//         lastVibrationTime = millis();
+//     }
+
+//     if (b6Pressed) {
+//         data = String(a.acceleration.x, 2) + "," +
+//                String(a.acceleration.y, 2) + "," +
+//                String(a.acceleration.z, 2) + "," +
+//                String(g.gyro.x, 2) + "," +
+//                String(g.gyro.y, 2) + "," +
+//                String(g.gyro.z, 2);
+//     } else {
+//         data = "0,0,0,0,0,0";
+//     }
+
+//     for (int i = 0; i < 6; i++) {
+//         int state = digitalRead(buttonPins[i]) == LOW ? 1 : 0;
+//         data += "," + String(state);
+//     }
+
+//     if (!calibrationSent) {
+//         data += ",1";
+//         calibrationSent = true;
+//     } else {
+//         data += ",0";
+//     }
+
+//     udp.beginPacket(udpAddress, udpPort);
+//     udp.print(data);
+//     udp.endPacket();
+
+//     Serial.println(data);
+//     delay(30);
+// }
+
+
+//=============================================
+
+// broadcast address 
+
+#include <Arduino.h>
 #include <WiFi.h>
 #include <WiFiUdp.h>
 #include <Wire.h>
@@ -202,130 +512,155 @@ Adafruit_MPU6050 mpu;
 WiFiUDP udp;
 
 // Wi-Fi credentials
-const char* ssid = "";
-const char* password = "";
+const char *ssid = "Rashmika";
+const char *password = "rashmika";
 
-// IP and port of the mobile device running Unity
-const char* udpAddress = "192.168.8.186"; // <-- Replace with your Unity device IP
+// UDP Broadcast
 const int udpPort = 4210;
+IPAddress broadcastIP;
 
-int buttonPins[6] = {14, 27, 26, 25, 33, 32}; // Button pin mapping
+int buttonPins[6] = {14, 27, 26, 25, 33, 32};
+#define MOTOR_PIN 23
 
-// State tracking
-bool programStarted = false;         // Indicates whether double-press was successful
-unsigned long firstPressTime = 0;    // For timing the first press
-int pressCount = 0;                  // Count button 6 presses
-bool calibrationSent = false;        // Sends calibration bit only once
+bool programStarted = false;
+unsigned long firstPressTime = 0;
+int pressCount = 0;
+bool calibrationSent = false;
+unsigned long lastVibrationTime = 0;
 
-void setup() {
-  Serial.begin(115200);
-  delay(1000);
+void setup()
+{
+    Serial.begin(115200);
+    delay(1000);
 
-  // Connect to Wi-Fi
-  Serial.print("Connecting to Wi-Fi");
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("\nConnected to Wi-Fi. IP: ");
-  Serial.println(WiFi.localIP());
+    Serial.print("Connecting to Wi-Fi");
+    WiFi.begin(ssid, password);
+    while (WiFi.status() != WL_CONNECTED)
+    {
+        delay(500);
+        Serial.print(".");
+    }
+    Serial.println("\nConnected! IP:");
+    Serial.println(WiFi.localIP());
 
-  // Initialize I2C and MPU6050
-  Wire.begin();
-  if (!mpu.begin()) {
-    Serial.println("Failed to find MPU6050");
-    while (1) delay(10);
-  }
-  Serial.println("MPU6050 connected!");
+    IPAddress localIP = WiFi.localIP();
+    broadcastIP = IPAddress(localIP[0], localIP[1], localIP[2], 255);
 
-  // Configure MPU settings
-  mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
-  mpu.setGyroRange(MPU6050_RANGE_500_DEG);
-  mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
+    Wire.begin();
+    if (!mpu.begin())
+    {
+        Serial.println("MPU6050 not found");
+        while (1)
+            delay(10);
+    }
+    Serial.println("MPU6050 connected!");
 
-  // Setup buttons
-  for (int i = 0; i < 6; i++) {
-    pinMode(buttonPins[i], INPUT_PULLUP);
-  }
+    mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+    mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+    mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
 
-  Serial.println("Double-press Button 6 within 500ms to start...");
+    for (int i = 0; i < 6; i++)
+    {
+        pinMode(buttonPins[i], INPUT_PULLUP);
+    }
+
+    pinMode(MOTOR_PIN, OUTPUT);
+    digitalWrite(MOTOR_PIN, LOW);
+
+    Serial.println("Double-press Button 6 (GPIO 32) to start...");
 }
 
-void loop() {
-  static bool lastState = HIGH;
-  bool currentState = digitalRead(buttonPins[5]); // Button 6
+void loop()
+{
+    static bool lastState = HIGH;
+    bool currentState = digitalRead(buttonPins[5]); // Button 6
 
-  if (!programStarted) {
-    // Detect falling edge (button press)
-    if (lastState == HIGH && currentState == LOW) {
-      unsigned long now = millis();
-
-      if (pressCount == 0) {
-        firstPressTime = now;
-        pressCount = 1;
-      } else if (pressCount == 1 && (now - firstPressTime <= 500))
-      { // press time check karanne methanin; 500 ms athlatha press karanna ona. nathnam aye state eka 0 wenawa press eke ilaga 500 ms athulatha. 
-        programStarted = true;
-        Serial.println("Double press detected. Program started!");
-      }
-      else
-      {
-        pressCount = 0; // Reset if delay too long
-      }
+    // Double-press logic for start / reset
+    if (lastState == HIGH && currentState == LOW)
+    {
+        unsigned long now = millis();
+        if (pressCount == 0)
+        {
+            firstPressTime = now;
+            pressCount = 1;
+        }
+        else if (pressCount == 1 && (now - firstPressTime <= 500))
+        {
+            programStarted = !programStarted;
+            calibrationSent = false;
+            Serial.println(programStarted ? "Program started!" : "Program reset to initial state!");
+            pressCount = 0;
+        }
+        else
+        {
+            pressCount = 0;
+        }
     }
-
-    // Reset if time expired without second press
-    if (pressCount == 1 && (millis() - firstPressTime > 500)) {
-      pressCount = 0;
+    if (pressCount == 1 && (millis() - firstPressTime > 500))
+    {
+        pressCount = 0;
     }
-
     lastState = currentState;
-    delay(10); // debounce
-    return;    // wait until program starts
-  }
 
-  // --- Main logic starts after calibration ---
+    if (!programStarted)
+    {
+        delay(10);
+        return;
+    }
 
-  bool b6Pressed = (currentState == LOW);
-  String data;
+    bool b6Pressed = (currentState == LOW);
+    String data;
 
-  // Read accelerometer and gyroscope
-  sensors_event_t a, g, temp;
-  mpu.getEvent(&a, &g, &temp);
+    sensors_event_t a, g, temp;
+    mpu.getEvent(&a, &g, &temp);
 
-  if (b6Pressed) {
-    data = String(a.acceleration.x, 2) + "," +
-           String(a.acceleration.y, 2) + "," +
-           String(a.acceleration.z, 2) + "," +
-           String(g.gyro.x, 2) + "," +
-           String(g.gyro.y, 2) + "," +
-           String(g.gyro.z, 2);
-  } else {
-    data = "0,0,0,0,0,0"; // Zero output when button not held
-  }
+    float az = a.acceleration.z;
 
-  // Append button states (button 1–6)
-  for (int i = 0; i < 6; i++) {
-    int state = digitalRead(buttonPins[i]) == LOW ? 1 : 0;
-    data += "," + String(state);
-  }
+    // ✅ Vibrate only when Button 6 pressed & Az between 8 - 10
+    if (b6Pressed && az >= 8.0 && az <= 10.0 && (millis() - lastVibrationTime > 1000))
+    {
+        Serial.println("VIBRATION TRIGGERED (Az = " + String(az) + ")");
+        digitalWrite(MOTOR_PIN, HIGH);
+        delay(300);
+        digitalWrite(MOTOR_PIN, LOW);
+        lastVibrationTime = millis();
+    }
 
-  // Append calibration bit (13th bit): send '1' once after double press
-  if (!calibrationSent) {
-    data += ",1";
-    calibrationSent = true; // only once
-  } else {
-    data += ",0";
-  }
+    if (b6Pressed)
+    {
+        data = String(a.acceleration.x, 2) + "," +
+               String(a.acceleration.y, 2) + "," +
+               String(a.acceleration.z, 2) + "," +
+               String(g.gyro.x, 2) + "," +
+               String(g.gyro.y, 2) + "," +
+               String(g.gyro.z, 2);
+    }
+    else
+    {
+        data = "0,0,0,0,0,0";
+    }
 
-  // Send the data packet via UDP
-  udp.beginPacket(udpAddress, udpPort);
-  udp.print(data);
-  udp.endPacket();
+    for (int i = 0; i < 6; i++)
+    {
+        int state = digitalRead(buttonPins[i]) == LOW ? 1 : 0;
+        data += "," + String(state);
+    }
 
-  Serial.println(data); // Optional debug output
-  delay(30); // ~33 Hz
+    // Calibration bit: send 1 only once after starting, then always 0 until reset
+    if (!calibrationSent)
+    {
+        data += ",1";
+        calibrationSent = true;
+    }
+    else
+    {
+        data += ",0";
+    }
+
+    udp.beginPacket(broadcastIP, udpPort);
+    udp.print(data);
+    udp.endPacket();
+
+    Serial.println(data);
+    delay(30);
 }
-
-

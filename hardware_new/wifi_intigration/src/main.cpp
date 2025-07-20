@@ -512,8 +512,8 @@ Adafruit_MPU6050 mpu;
 WiFiUDP udp;
 
 // Wi-Fi credentials
-const char *ssid = "Rashmika";
-const char *password = "rashmika";
+const char *ssid = "Dialog 4G 152";
+const char *password = "7Cee67C1";
 
 // UDP Broadcast
 const int udpPort = 4210;
@@ -616,7 +616,7 @@ void loop()
 
     float az = a.acceleration.z;
 
-    // ✅ Vibrate only when Button 6 pressed & Az between 8 - 10
+    //vibrate only when Button 6 pressed & Az between 8 - 10
     if (b6Pressed && az >= 8.0 && az <= 10.0 && (millis() - lastVibrationTime > 1000))
     {
         Serial.println("VIBRATION TRIGGERED (Az = " + String(az) + ")");

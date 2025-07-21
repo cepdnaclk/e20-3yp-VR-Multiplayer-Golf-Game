@@ -91,17 +91,6 @@ The system consists of:
    - ESP32 reads motion data from the MPU6050 sensor and it connects to a Wi-Fi network and sends the data via UDP packets.
   
 ---
-  #### Game Design
-
-![Game-Design](docs/images/game_design1.png)
-
-![Game-Design](docs/images/game_design2.png)
-
-![Game-Design](docs/images/game_design3.png)
-
-![Game-Design](docs/images/game_design4.png)
-
----
 ## Device Connectivity
 
 - **ESP32 controllers** in both the golf stick and handwear module collect sensor/button data.

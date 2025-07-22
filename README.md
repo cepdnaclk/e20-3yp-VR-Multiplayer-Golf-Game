@@ -10,7 +10,10 @@ The **VR Multiplayer Golf Game** is an immersive virtual reality experience that
 
 ## Version Control & Collaboration
 We used Unity Version Control for managing the project's source code and collaboration between team members.
-
+### IMPORTANT!!!
+**If Someone is to recreate the project, they need to have Unity Version Controlling Software Installed, and use the following link to get the required files**
+[plastic://e20420.unity/repos/CO3060VRGolfGame%2fVRGolfMultiplayer](plastic://e20420.unity/repos/CO3060VRGolfGame%2fVRGolfMultiplayer)
+(Use this as a hyperlink in your browser which will launch Unity Plastic SCM)
 
 ## Table of Contents
 

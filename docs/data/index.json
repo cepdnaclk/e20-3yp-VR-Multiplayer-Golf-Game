@@ -29,7 +29,7 @@
         }
     ],
     "image": "cover_page.jpg",
-    "thumbnail": "thumbnail.jpg"
+    "thumbnail": "thumbnail.jpg",
     
     "tags": ["Embedded Systems", "Software Engineering","Computer and Network Security","VR", "Unity", "Multiplayer","GOLF","ESP32"]
 }
